@@ -115,6 +115,15 @@ waifu = [
   { name: "Chihaya Kisaragi", series: "The Idolm@\u200bster" },
   { name: "Producer", series: "The Idolm@\u200bster" },
   { name: "Makoto Kikuchi", series: "The Idolm@\u200bster" },
+  { name: "Haruka Amami", series: "The Idolm@\u200bster" },
+  { name: "Chihaya Kisaragi", series: "The Idolm@\u200bster" },
+  { name: "Yukiho Hagiwara", series: "The Idolm@\u200bster" },
+  { name: "Yayoi Takatsuki", series: "The Idolm@\u200bster" },
+  { name: "Ritsuko Akizuki", series: "The Idolm@\u200bster" },
+  { name: "Azusa Miura", series: "The Idolm@\u200bster" },
+  { name: "Iori Minase", series: "The Idolm@\u200bster" },
+  { name: "Mami Futami", series: "The Idolm@\u200bster" },
+  { name: "Ami Futami", series: "The Idolm@\u200bster" },
   
   # Love Live!
   { name: "Nozomi Toujou", series: "Love Live!" },
