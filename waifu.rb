@@ -52,6 +52,10 @@ waifu = [
   { name: "Chihiro Fujisaki", series: "DanganRonpa" },
   { name: "Mirai Kuriyama", series: "Kyoukai no Kanata" },
   { name: "Izumi Nase", series: "Kyoukai no Kanata" },
+  { name: "Illyasviel von Einzbern", series: "Fate/kaleid liner Prisma☆Illya" },
+  { name: "Rin Tohsaka", series: "Fate/kaleid liner Prisma☆Illya" },
+  { name: "Luvia Edelfelt", series: "Fate/stay" },
+  { name: "Irisviel von Einzbern", series: "Fate/zero" },
 ]
 
 client = Twitter::REST::Client.new do |config|
