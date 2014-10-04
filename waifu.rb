@@ -73,6 +73,9 @@ waifu = [
   { name: "Akeno Himejima", series: "Highschool DxD" },
   { name: "Koneko Toujou", series: "Highschool DxD" },
   { name: "Xenovia", series: "Highschool DxD" },
+  { name: "Chihaya Kisaragi", series: "The Idolm@" + "\u200b" + "ster" },
+  { name: "Producer", series: "The Idolm@" + "\u200b" + "ster" },
+  { name: "Makoto Kikuchi", series: "The Idolm@" + "\u200b" + "ster" },
 ]
 
 client = Twitter::REST::Client.new do |config|
