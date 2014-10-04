@@ -76,6 +76,8 @@ waifu = [
   { name: "Chihaya Kisaragi", series: "The Idolm@" + "\u200b" + "ster" },
   { name: "Producer", series: "The Idolm@" + "\u200b" + "ster" },
   { name: "Makoto Kikuchi", series: "The Idolm@" + "\u200b" + "ster" },
+  { name: "Nozomi Toujou", series: "Love Live!" },
+  { name: "Kira Tsubasa", series: "Love Live!" },
 ]
 
 client = Twitter::REST::Client.new do |config|
