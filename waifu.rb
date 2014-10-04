@@ -307,7 +307,7 @@ loop do
           begin
             client.update "@#{object.user.screen_name} Your waifu is #{chosen_one[:name]} (#{chosen_one[:series]})", in_reply_to_status:object
           rescue Exception => e
-            puts "[#{Time.new.to_s}] #{e.message}"
+            puts "\033[31;1m[#{Time.new.to_s}] #{e.message}\033[0m"
           end
         end
       end
