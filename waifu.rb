@@ -98,6 +98,9 @@ waifu = [
   { name: "Mikasa Ackerman", series: "Shingeki no Kyojin" },
   { name: "Saki Watanabe", series: "Shinsekai Yori" },
   { name: "Haruhi Suzumiya", series: "Suzumiya Haruhi no Yūutsu" },
+  { name: "Kanae Shinjou", series: "Teekyu" },
+  { name: "Yoshino \"Yoppi\" Nanase", series: "Wake Up, Girls!" },
+  { name: "Tomoko Kuroki", series: "WataMote" },
 ]
 
 client = Twitter::REST::Client.new do |config|
