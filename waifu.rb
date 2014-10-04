@@ -56,6 +56,8 @@ waifu = [
   { name: "Rin Tohsaka", series: "Fate/kaleid liner Prisma☆Illya" },
   { name: "Luvia Edelfelt", series: "Fate/stay" },
   { name: "Irisviel von Einzbern", series: "Fate/zero" },
+  { name: "Ayase Aragaki", series: "OreImo" },
+  { name: "Kanako Kurusu", series: "OreImo" },
 ]
 
 client = Twitter::REST::Client.new do |config|
