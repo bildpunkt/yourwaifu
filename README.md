@@ -19,7 +19,7 @@ Add your consumer/access token keys/secrets to `config.yml.example` and rename i
 
 ## Contributing
 
-Missing your waifu? Make a Pull Request/Issue with your waifu (+ series (s)he is from) and they might be added!
+Missing your waifu? Make a Pull Request/Issue with your waifu (+ series they are from) and they might be added!
 
 ## Contributors
 
