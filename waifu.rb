@@ -1,7 +1,7 @@
 require "yaml"
 require "twitter"
 
-config = YAML.load_file File.expand_path(".", "config.yml")
+keys = YAML.load_file File.expand_path(".", "config.yml")
 
 waifu = [
   { name: "Yuuji Kazami", series: "Grisaia no Kajitsu" },
@@ -30,17 +30,17 @@ waifu = [
 ]
 
 client = Twitter::REST::Client.new do |config|
-  config.consumer_key = $config['consumer_key']
-  config.consumer_secret = $config['consumer_secret']
-  config.access_token = $config['access_token']
-  config.access_token_secret = $config['access_token_secret']
+  config.consumer_key = keys['consumer_key']
+  config.consumer_secret = keys['consumer_secret']
+  config.access_token = keys['access_token']
+  config.access_token_secret = keys['access_token_secret']
 end
  
 streamer = Twitter::Streaming::Client.new do |config|
-  config.consumer_key = $config['consumer_key']
-  config.consumer_secret = $config['consumer_secret']
-  config.access_token = $config['access_token']
-  config.access_token_secret = $config['access_token_secret']
+  config.consumer_key = keys['consumer_key']
+  config.consumer_secret = keys['consumer_secret']
+  config.access_token = keys['access_token']
+  config.access_token_secret = keys['access_token_secret']
 end
 
 streamer.user do |object|
