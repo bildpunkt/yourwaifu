@@ -117,6 +117,14 @@ waifu = [
   # Love Live!
   { name: "Nozomi Toujou", series: "Love Live!" },
   { name: "Kira Tsubasa", series: "Love Live!" },
+  { name: "Honoka Kōsaka", series: "Love Live!" },
+  { name: "Umi Sonoda", series: "Love Live!" },
+  { name: "Kotori Minami", series: "Love Live!" },
+  { name: "Nico Yazawa", series: "Love Live!" },
+  { name: "Eli Ayase", series: "Love Live!" },
+  { name: "Maki Nishikino", series: "Love Live!" },
+  { name: "Hanayo Koizumi", series: "Love Live!" },
+  { name: "Rin Hoshizora", series: "Love Live!" },
   
   # Himegoto
   { name: "18-kin", series: "Himegoto" },
