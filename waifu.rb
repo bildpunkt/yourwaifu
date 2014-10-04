@@ -171,6 +171,14 @@ waifu = [
   
   # Angel Beats
   { name: "Kanade Tachibana", series: "Angel Beats!" },
+  { name: "Yuri Nakamura", series: "Angel Beats!" },
+  { name: "Eri Shiina", series: "Angel Beats!" },
+  { name: "Yusa", series: "Angel Beats!" },
+  { name: "Masami Iwasawa", series: "Angel Beats!" },
+  { name: "Yui", series: "Angel Beats!" },
+  { name: "Hisako", series: "Angel Beats!" },
+  { name: "Miyuki Irie", series: "Angel Beats!" },
+  { name: "Shiori Sekine", series: "Angel Beats!" },
   
   # Aria the Origination
   { name: "Akari Mizunashi", series: "Aria the Origination" },
