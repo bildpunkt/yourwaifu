@@ -56,9 +56,11 @@ end
 streamer.user do |object|
   if object.is_a? Twitter::Tweet
     unless current_user.id == object.user.id
-      chosen_one = waifu.sample
-      puts "#{object.user.screen_name}: #{chosen_one[:name]} - #{chosen_one[:series]}"
-      client.update "@#{object.user.screen_name} Your waifu is #{chosen_one[:name]} (#{chosen_one[:series]})", in_reply_to_status:object
+      unless object.text.start_with? "RT @"
+        chosen_one = waifu.sample
+        puts "#{object.user.screen_name}: #{chosen_one[:name]} - #{chosen_one[:series]}"
+        client.update "@#{object.user.screen_name} Your waifu is #{chosen_one[:name]} (#{chosen_one[:series]})", in_reply_to_status:object
+      end
     end
   end
 end
