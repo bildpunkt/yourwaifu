@@ -84,6 +84,8 @@ waifu = [
   { name: "Ritsu Tainaka", series: "K-ON!" },
   { name: "Akemi Homura", series: "Mahou Shoujo Madoka★Magica" },
   { name: "Sakura Miki", series: "Mahou Shoujo Madoka★Magica" },
+  { name: "Maria Takayama", series: "Haganai" },
+  { name: "Yukimura Kusunoki", series: "Haganai" },
 ]
 
 client = Twitter::REST::Client.new do |config|
