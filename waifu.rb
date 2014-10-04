@@ -85,6 +85,7 @@ waifu = [
   # OreImo
   { name: "Ayase Aragaki", series: "OreImo" },
   { name: "Kanako Kurusu", series: "OreImo" },
+  { name: "Kirino Kousaka", series: "OreImo" },
   
   # Evangelion
   { name: "Asuka Langley", series: "Evangelion" },
@@ -200,11 +201,11 @@ waifu = [
   
   #Little Busters
   { name: "Yuiko Kurugaya", series: "Little Busters" },
+  { name: "Kudryavka Noumi", series: "Little Busters" },
   
   # Noragami
   { name: "Kofuku Ebisu", series: "Noragami" },
   { name: "Hiyori Iki", series: "Noragami" },
-  
   
   # Sailor Moon
   { name: "Makoto Kino", series: "Sailor Moon" },
