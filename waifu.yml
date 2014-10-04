@@ -1,3 +1,4 @@
+  # Grisaia no Kajitsu
 - name: Yuuji Kazami
   series: Grisaia no Kajitsu
 - name: Yumiko Sakake
@@ -14,6 +15,8 @@
   series: Grisaia no Kajitsu
 - name: Kazuki Kazami
   series: Grisaia no Kajitsu
+  
+  # Katawa Shoujo
 - name: Hanako Ikezawa
   series: Katawa Shoujo
 - name: Lilly Satou
@@ -32,6 +35,8 @@
   series: Katawa Shoujo
 - name: Suzu Suzuki
   series: Katawa Shoujo
+  
+  # Gokukoku no Brynhildr
 - name: Ryouta Murakami
   series: Gokukoku no Brynhildr
 - name: Neko Kuroha
@@ -44,6 +49,8 @@
   series: Gokukoku no Brynhildr
 - name: Hatsuna Wakabayashi
   series: Gokukoku no Brynhildr
+  
+  # Steins;Gate
 - name: Rintaro Okabe
   series: Steins;Gate
 - name: Kurisu Makise
@@ -52,6 +59,8 @@
   series: Steins;Gate
 - name: Ruka Urushibara
   series: Steins;Gate
+  
+  # To Aru Kagaku no Railgun
 - name: Misaka Mikoto
   series: To Aru Kagaku no Railgun
 - name: Ruiko Saten
@@ -60,6 +69,8 @@
   series: To Aru Kagaku no Railgun
 - name: Kuroko Shirai
   series: To Aru Kagaku no Railgun
+  
+  # Monogatari Series
 - name: Tsukihi Araragi
   series: Monogatari Series
 - name: Tsubasa Hanekawa
@@ -70,16 +81,22 @@
   series: Monogatari Series
 - name: Karen Araragi
   series: Monogatari Series
+  
+  # Kill la Kill
 - name: Ryuuko Matoi
   series: Kill la Kill
 - name: Satsuki Kiryuuin
   series: Kill la Kill
 - name: Nonon Jakuzure
   series: Kill la Kill
+  
+  # Rail Wars
 - name: Aoi Sakurai
   series: Rail Wars
 - name: Haruka Koumi
   series: Rail Wars
+  
+  # Yuru Yuri
 - name: Akari Akaza
   series: Yuru Yuri
 - name: Kyouko Toshino
@@ -88,14 +105,20 @@
   series: Yuru Yuri
 - name: Chinatsu Yoshikawa
   series: Yuru Yuri
+  
+  # DanganRonpa 
 - name: Junko Enoshima
   series: DanganRonpa
 - name: Chihiro Fujisaki
   series: DanganRonpa
+  
+  # Kyoukai no Kanata
 - name: Mirai Kuriyama
   series: Kyoukai no Kanata
 - name: Izumi Nase
   series: Kyoukai no Kanata
+  
+  # Fate Series
 - name: Illyasviel von Einzbern
   series: Fate/kaleid liner Prisma Illya
 - name: Rin Tohsaka
@@ -104,16 +127,22 @@
   series: Fate/stay
 - name: Irisviel von Einzbern
   series: Fate/zero
+  
+  # OreImo
 - name: Ayase Aragaki
   series: OreImo
 - name: Kanako Kurusu
   series: OreImo
 - name: Kirino Kousaka
   series: OreImo
+  
+  # Evangelion
 - name: Asuka Langley
   series: Evangelion
 - name: Misato Kitsuragi
   series: Evangelion
+  
+  # No Game No Life
 - name: Shiro
   series: No Game No Life
 - name: Stephanie Dora
@@ -122,24 +151,32 @@
   series: No Game No Life
 - name: Izuna Hatsuse
   series: No Game No Life
+  
+  # Tonari no Kaibutsu-kun
 - name: Shizuku Mizutani
   series: Tonari no Kaibutsu-kun
 - name: Asako Natsume
   series: Tonari no Kaibutsu-kun
 - name: Iyo Yamaguchi
   series: Tonari no Kaibutsu-kun
+  
+  # Toradora
 - name: Aisaka Taiga
   series: Toradora
 - name: Minori Kushieda
   series: Toradora
 - name: Ami Kawashima
   series: Toradora
+  
+  # Highschool DxD
 - name: Akeno Himejima
   series: Highschool DxD
 - name: Koneko Toujou
   series: Highschool DxD
 - name: Xenovia
   series: Highschool DxD
+  
+  # The Idolm@ster
 - name: Chihaya Kisaragi
   series: The Idolm@ster
 - name: Producer
@@ -164,6 +201,8 @@
   series: The Idolm@ster
 - name: Ami Futami
   series: The Idolm@ster
+  
+  # Love Live!
 - name: Nozomi Toujou
   series: Love Live!
 - name: Kira Tsubasa
@@ -184,6 +223,8 @@
   series: Love Live!
 - name: Rin Hoshizora
   series: Love Live!
+  
+  # Nagi no Asukara
 - name: Manaka Mukaido
   series: Nagi no Asukara
 - name: Chisaki Hiradaira
@@ -200,14 +241,20 @@
   series: Nagi no Asukara
 - name: Yu Seiki
   series: Nagi no Asukara
+  
+  # Himegoto
 - name: 18-kin
   series: Himegoto
 - name: Unko
   series: Himegoto
+  
+  # K-ON!
 - name: Yui Hirasawa
   series: K-ON!
 - name: Ritsu Tainaka
   series: K-ON!
+  
+  # Kiniro Mosaic
 - name: Shinobu Omiya
   series: Kiniro Mosaic
 - name: Alice Cartalet
@@ -226,6 +273,8 @@
   series: Kiniro Mosaic
 - name: Honoka Matsubara
   series: Kiniro Mosaic
+  
+  # Mahou Shoujo Madoka Magica
 - name: Akemi Homura
   series: Mahou Shoujo Madoka Magica
 - name: Sakura Kyoko
@@ -240,10 +289,14 @@
   series: Mahou Shoujo Madoka Magica
 - name: Kyubey
   series: Mahou Shoujo Madoka Magica
+  
+  # Haganai
 - name: Maria Takayama
   series: Haganai
 - name: Yukimura Kusunoki
   series: Haganai
+  
+  # Angel Beats!
 - name: Kanade Tachibana
   series: Angel Beats!
 - name: Yuri Nakamura
@@ -262,38 +315,68 @@
   series: Angel Beats!
 - name: Shiori Sekine
   series: Angel Beats!
+  
+  # Aria the Origination
 - name: Akari Mizunashi
   series: Aria the Origination
+  
+  # C3
 - name: Fear Kubrick
   series: C3
+  
+  # Corpse Party
 - name: Ayumi Shinozaki
   series: Corpse Party
+  
+  # Date a Live
 - name: Kurumi Tokisaki
   series: Date a Live
+  
+  # Deadman Wonderland
 - name: Shiro
   series: Deadman Wonderland
+  
+  # Kore wa Zombie desu ka?
 - name: Haruna
   series: Kore wa Zombie desu ka?
+  
+  # Little Busters
 - name: Yuiko Kurugaya
   series: Little Busters
 - name: Kudryavka Noumi
   series: Little Busters
+  
+  # Noragami
 - name: Kofuku Ebisu
   series: Noragami
 - name: Hiyori Iki
   series: Noragami
+  
+  # Sailor Moon
 - name: Makoto Kino
   series: Sailor Moon
+  
+  # Spice & Wolf
 - name: Horo
   series: Spice & Wolf
+  
+  # Shingeki no Kyojin
 - name: Mikasa Ackerman
   series: Shingeki no Kyojin
+  
+  # Shinsekai Yori
 - name: Saki Watanabe
   series: Shinsekai Yori
+  
+  # Suzumiya Haruhi no Yuutsu
 - name: Haruhi Suzumiya
   series: Suzumiya Haruhi no Yuutsu
+  
+  # Teekyu
 - name: Kanae Shinjou
   series: Teekyu
+  
+  # Wake Up, Girls!
 - name: Yoshino "Yoppi" Nanase
   series: Wake Up, Girls!
 - name: Mayu Shimada
@@ -308,8 +391,12 @@
   series: Wake Up, Girls!
 - name: Miyu Okamoto
   series: Wake Up, Girls!
+  
+  # WataMote
 - name: Tomoko Kuroki
   series: WataMote
+  
+  # Touhou
 - name: Reimu Hakurei
   series: Touhou
 - name: Marisa Kirisame
