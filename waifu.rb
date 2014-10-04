@@ -58,6 +58,8 @@ waifu = [
   { name: "Irisviel von Einzbern", series: "Fate/zero" },
   { name: "Ayase Aragaki", series: "OreImo" },
   { name: "Kanako Kurusu", series: "OreImo" },
+  { name: "Asuka Langley", series: "Evangelion" },
+  { name: "Misato Kitsuragi", series: "Evangelion" },
 ]
 
 client = Twitter::REST::Client.new do |config|
