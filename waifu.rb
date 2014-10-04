@@ -147,7 +147,12 @@ waifu = [
   
   # Mahou Shoujo Madoka★Magica
   { name: "Akemi Homura", series: "Mahou Shoujo Madoka★Magica" },
-  { name: "Sakura Miki", series: "Mahou Shoujo Madoka★Magica" },
+  { name: "Sakura Kyoko", series: "Mahou Shoujo Madoka★Magica" },
+  { name: "Madoka Kaname", series: "Mahou Shoujo Madoka★Magica" },
+  { name: "Mami Tomoe", series: "Mahou Shoujo Madoka★Magica" },
+  { name: "Sayaka Miki", series: "Mahou Shoujo Madoka★Magica" },
+  { name: "Nagisa Momoe", series: "Mahou Shoujo Madoka★Magica" },
+  { name: "Kyubey", series: "Mahou Shoujo Madoka★Magica" },
   
   # Haganai
   { name: "Maria Takayama", series: "Haganai" },
