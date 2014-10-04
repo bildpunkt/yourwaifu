@@ -31,6 +31,10 @@ waifu = [
   { name: "Rintarō Okabe", series: "Steins;Gate" },
   { name: "Kurisu Makise", series: "Steins;Gate" },
   { name: "Mayuri Shiina", series: "Steins;Gate" },
+  { name: "Misaka Mikoto", series: "To Aru Kagaku no Railgun " },
+  { name: "Ruiko Saten", series: "To Aru Kagaku no Railgun " },
+  { name: "Kazari Uiharu", series: "To Aru Kagaku no Railgun " },
+  { name: "Kuroko Shirai", series: "To Aru Kagaku no Railgun " },
 ]
 
 client = Twitter::REST::Client.new do |config|
