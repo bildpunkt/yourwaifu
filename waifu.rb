@@ -210,6 +210,12 @@ waifu = [
   
   # Wake Up, Girls!
   { name: "Yoshino \"Yoppi\" Nanase", series: "Wake Up, Girls!" },
+  { name: "Mayu Shimada", series: "Wake Up, Girls!" },
+  { name: "Airi Hayashida", series: "Wake Up, Girls!" },
+  { name: "Minami Katayama", series: "Wake Up, Girls!" },
+  { name: "Nanami Hisami", series: "Wake Up, Girls!" },
+  { name: "Kaya Kikuma", series: "Wake Up, Girls!" },
+  { name: "Miyu Okamoto", series: "Wake Up, Girls!" },
   
   # WataMote
   { name: "Tomoko Kuroki", series: "WataMote" },
