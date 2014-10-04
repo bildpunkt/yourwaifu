@@ -60,6 +60,10 @@ waifu = [
   { name: "Kanako Kurusu", series: "OreImo" },
   { name: "Asuka Langley", series: "Evangelion" },
   { name: "Misato Kitsuragi", series: "Evangelion" },
+  { name: "Shiro", series: "No Game No Life" },
+  { name: "Stephanie Dora", series: "No Game No Life" },
+  { name: "Jibril", series: "No Game No Life" },
+  { name: "Izuna Hatsuse", series: "No Game No Life" },
 ]
 
 client = Twitter::REST::Client.new do |config|
