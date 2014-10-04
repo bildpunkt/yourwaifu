@@ -64,6 +64,9 @@ waifu = [
   { name: "Stephanie Dora", series: "No Game No Life" },
   { name: "Jibril", series: "No Game No Life" },
   { name: "Izuna Hatsuse", series: "No Game No Life" },
+  { name: "Shizuku Mizutani", series: "Tonari no Kaibutsu-kun" },
+  { name: "Asako Natsume", series: "Tonari no Kaibutsu-kun" },
+  { name: "Iyo Yamaguchi", series: "Tonari no Kaibutsu-kun" },
 ]
 
 client = Twitter::REST::Client.new do |config|
