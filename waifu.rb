@@ -48,6 +48,8 @@ waifu = [
   { name: "Haruka Koumi", series: "Rail Wars" },
   { name: "Akari Akaza", series: "Yuru Yuri" },
   { name: "Kyouko Toshino", series: "Yuru Yuri" },
+  { name: "Junko Enoshima", series: "DanganRonpa" },
+  { name: "Chihiro Fujisaki", series: "DanganRonpa" },
 ]
 
 client = Twitter::REST::Client.new do |config|
