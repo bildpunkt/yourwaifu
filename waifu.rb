@@ -302,7 +302,7 @@ streamer.user do |object|
     unless current_user.id == object.user.id
       unless object.text.start_with? "RT @"
         chosen_one = waifu.sample
-        puts "#{object.user.screen_name}: #{chosen_one[:name]} - #{chosen_one[:series]}"
+        puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one[:name]} - #{chosen_one[:series]}"
         client.update "@#{object.user.screen_name} Your waifu is #{chosen_one[:name]} (#{chosen_one[:series]})", in_reply_to_status:object
       end
     end
