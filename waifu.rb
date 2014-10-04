@@ -138,6 +138,16 @@ waifu = [
   { name: "Hanayo Koizumi", series: "Love Live!" },
   { name: "Rin Hoshizora", series: "Love Live!" },
   
+  # Nagi no Asukara
+  { name: "Manaka Mukaido", series: "Nagi no Asukara" },
+  { name: "Chisaki Hiradaira", series: "Nagi no Asukara" },
+  { name: "Miuna Shiodome", series: "Nagi no Asukara" },
+  { name: "Sayu Hisanuma", series: "Nagi no Asukara" },
+  { name: "Akari Shiodome", series: "Nagi no Asukara" },
+  { name: "Miori Shiodome", series: "Nagi no Asukara" },
+  { name: "Kaori Akiyoshi", series: "Nagi no Asukara" },
+  { name: "Yū Seiki", series: "Nagi no Asukara" },
+  
   # Himegoto
   { name: "18-kin", series: "Himegoto" },
   { name: "Unko", series: "Himegoto" },
