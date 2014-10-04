@@ -67,6 +67,9 @@ waifu = [
   { name: "Shizuku Mizutani", series: "Tonari no Kaibutsu-kun" },
   { name: "Asako Natsume", series: "Tonari no Kaibutsu-kun" },
   { name: "Iyo Yamaguchi", series: "Tonari no Kaibutsu-kun" },
+  { name: "Aisaka Taiga", series: "Toradora" },
+  { name: "Minori Kushieda", series: "Toradora" },
+  { name: "Ami Kawashima", series: "Toradora" },
 ]
 
 client = Twitter::REST::Client.new do |config|
