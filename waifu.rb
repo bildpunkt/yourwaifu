@@ -236,6 +236,42 @@ waifu = [
   
   # WataMote
   { name: "Tomoko Kuroki", series: "WataMote" },
+  
+  # Touhou
+  { name: "Reimu Hakurei", series: "Touhou" },
+  { name: "Marisa Kirisame", series: "Touhou" },
+  { name: "Rumia", series: "Touhou" },
+  { name: "Daiyousei", series: "Touhou" },
+  { name: "Cirno", series: "Touhou" },
+  { name: "Hong Meirin", series: "Touhou" },
+  { name: "Koakuma", series: "Touhou" },
+  { name: "Patchouli Knowledge", series: "Touhou" },
+  { name: "Sakuya Izayoi", series: "Touhou" },
+  { name: "Remilia Scarlet", series: "Touhou" },
+  { name: "Flandre Scarlet", series: "Touhou" },
+  { name: "Letty Whiterock", series: "Touhou" },
+  { name: "Chen", series: "Touhou" },
+  { name: "Alice Margatroid", series: "Touhou" },
+  { name: "Youmu Konpaku", series: "Touhou" },
+  { name: "Yuyuko Saigyouji", series: "Touhou" },
+  { name: "Ran Yakumo", series: "Touhou" },
+  { name: "Yukari Yakumo", series: "Touhou" },
+  { name: "Suika Ibuki", series: "Touhou" },
+  { name: "Wriggle Nightbug", series: "Touhou" },
+  { name: "Mystia Lorelei", series: "Touhou" },
+  { name: "Keine Kamishirasawa", series: "Touhou" },
+  { name: "Tewi Inaba", series: "Touhou" },
+  { name: "Reisen Udongein Inaba", series: "Touhou" },
+  { name: "Nitori Kawashiro", series: "Touhou" },
+  { name: "Sanae Kochiya", series: "Touhou" },
+  { name: "Momizi Inubashiri", series: "Touhou" },
+  { name: "Kanako Yasaka", series: "Touhou" },
+  { name: "Suwako Moriya", series: "Touhou" },
+  { name: "Tenshi Hinanai", series: "Touhou" },
+  { name: "Satori Komeiji", series: "Touhou" },
+  { name: "Rin Kaenbyou", series: "Touhou" },
+  { name: "Utsuho Reiuji", series: "Touhou" },
+  { name: "Koishi Komeiji", series: "Touhou" },
 ]
 
 client = Twitter::REST::Client.new do |config|
