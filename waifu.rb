@@ -198,6 +198,14 @@ waifu = [
   # Kore wa Zombie desu ka?
   { name: "Haruna", series: "Kore wa Zombie desu ka?" },
   
+  #Little Busters
+  { name: "Yuiko Kurugaya", series: "Little Busters" },
+  
+  # Noragami
+  { name: "Kofuku Ebisu", series: "Noragami" },
+  { name: "Hiyori Iki", series: "Noragami" },
+  
+  
   # Sailor Moon
   { name: "Makoto Kino", series: "Sailor Moon" },
   
