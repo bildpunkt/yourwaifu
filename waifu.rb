@@ -28,6 +28,9 @@ waifu = [
   { name: "Kazumi Schlierenzauer", series: "Gokukoku no Brynhildr" },
   { name: "Kotori Takatori", series: "Gokukoku no Brynhildr" },
   { name: "Hatsuna Wakabayashi", series: "Gokukoku no Brynhildr" },
+  { name: "Rintarō Okabe", series: "Steins;Gate" },
+  { name: "Kurisu Makise", series: "Steins;Gate" },
+  { name: "Mayuri Shiina", series: "Steins;Gate" },
 ]
 
 client = Twitter::REST::Client.new do |config|
