@@ -146,6 +146,7 @@ waifu = [
   { name: "Akari Shiodome", series: "Nagi no Asukara" },
   { name: "Miori Shiodome", series: "Nagi no Asukara" },
   { name: "Kaori Akiyoshi", series: "Nagi no Asukara" },
+  { name: "Yū Seiki", series: "Nagi no Asukara" },
   
   # Himegoto
   { name: "18-kin", series: "Himegoto" },
