@@ -92,6 +92,9 @@ waifu = [
   { name: "Ayumi Shinozaki", series: "Corpse Party" },
   { name: "Kurumi Tokisaki", series: "Date a Live" },
   { name: "Shiro", series: "Deadman Wonderland" },
+  { name: "Haruna", series: "Kore wa Zombie desu ka?" },
+  { name: "Makoto Kino", series: "Sailor Moon" },
+  { name: "Horo", series: "Spice & Wolf" },
 ]
 
 client = Twitter::REST::Client.new do |config|
