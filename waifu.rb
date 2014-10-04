@@ -65,6 +65,8 @@ waifu = [
   # Yuru Yuri
   { name: "Akari Akaza", series: "Yuru Yuri" },
   { name: "Kyouko Toshino", series: "Yuru Yuri" },
+  { name: "Yui Funami", series: "Yuru Yuri" },
+  { name: "Chinatsu Yoshikawa", series: "Yuru Yuri" },
   
   # DanganRonpa
   { name: "Junko Enoshima", series: "DanganRonpa" },
