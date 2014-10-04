@@ -40,6 +40,9 @@ waifu = [
   { name: "Shinobu Oshino", series: "Monogatari Series" },
   { name: "Nadeko Sengoku", series: "Monogatari Series" },
   { name: "Karen Araragi", series: "Monogatari Series" },
+  { name: "Ryuuko Matoi", series: "Kill la Kill" },
+  { name: "Satsuki Kiryuuin", series: "Kill la Kill" },
+  { name: "Nonon Jakuzure", series: "Kill la Kill" },
 ]
 
 client = Twitter::REST::Client.new do |config|
