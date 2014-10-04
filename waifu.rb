@@ -50,6 +50,8 @@ waifu = [
   { name: "Kyouko Toshino", series: "Yuru Yuri" },
   { name: "Junko Enoshima", series: "DanganRonpa" },
   { name: "Chihiro Fujisaki", series: "DanganRonpa" },
+  { name: "Mirai Kuriyama", series: "Kyoukai no Kanata" },
+  { name: "Izumi Nase", series: "Kyoukai no Kanata" },
 ]
 
 client = Twitter::REST::Client.new do |config|
