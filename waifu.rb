@@ -70,6 +70,9 @@ waifu = [
   { name: "Aisaka Taiga", series: "Toradora" },
   { name: "Minori Kushieda", series: "Toradora" },
   { name: "Ami Kawashima", series: "Toradora" },
+  { name: "Akeno Himejima", series: "Highschool DxD" },
+  { name: "Koneko Toujou", series: "Highschool DxD" },
+  { name: "Xenovia", series: "Highschool DxD" },
 ]
 
 client = Twitter::REST::Client.new do |config|
