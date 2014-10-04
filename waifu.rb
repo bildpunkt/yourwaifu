@@ -95,6 +95,9 @@ waifu = [
   { name: "Haruna", series: "Kore wa Zombie desu ka?" },
   { name: "Makoto Kino", series: "Sailor Moon" },
   { name: "Horo", series: "Spice & Wolf" },
+  { name: "Mikasa Ackerman", series: "Shingeki no Kyojin" },
+  { name: "Saki Watanabe", series: "Shinsekai Yori" },
+  { name: "Haruhi Suzumiya", series: "Suzumiya Haruhi no Yūutsu" },
 ]
 
 client = Twitter::REST::Client.new do |config|
