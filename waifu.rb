@@ -1,5 +1,6 @@
 require "yaml"
 require "twitter"
+require "ostruct"
 
 keys = YAML.load_file File.expand_path(".", "config.yml")
 
@@ -43,9 +44,21 @@ streamer = Twitter::Streaming::Client.new do |config|
   config.access_token_secret = keys['access_token_secret']
 end
 
+begin
+  current_user = client.current_user
+rescue Exception => e
+  puts "Exception: #{e.message}"
+  # best hack:
+  current_user = OpenStruct.new
+  current_user.id = config["access_token"].split("-")[0]
+end
+
 streamer.user do |object|
   if object.is_a? Twitter::Tweet
-    chosen_one = waifu.sample
-    client.update "@#{object.user.screen_name} Your waifu is #{chosen_one[:name]} (#{chosen_one[:series]})", in_reply_to_status:object
+    unless current_user.id == object.user.id # can't unfollow ourselves
+      chosen_one = waifu.sample
+      puts "#{object.user.screen_name}: #{chosen_one[:name]} - #{chosen_one[:series]}"
+      client.update "@#{object.user.screen_name} Your waifu is #{chosen_one[:name]} (#{chosen_one[:series]})", in_reply_to_status:object
+    end
   end
 end
