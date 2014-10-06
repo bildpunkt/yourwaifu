@@ -42,7 +42,7 @@ loop do
             begin
             client.update_with_media "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("/img/#{chosen_one["series"]}/#{chosen_one["name"]}.png"), in_reply_to_status:object
             rescue Exception => m
-              puts "\033[34;1m[#{Time.new.to_s}] #{m.message} Trying to post tweet without image!\033[0m"
+              puts "\034[31;1m[#{Time.new.to_s}] #{m.message} Trying to post tweet without image!\034[0m"
               client.update "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status:object
             end
           rescue Exception => e
