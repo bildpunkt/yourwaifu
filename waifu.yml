@@ -135,6 +135,12 @@
   series: OreImo
 - name: Kirino Kousaka
   series: OreImo
+- name: Manami Tamura
+  series: OreImo
+- name: Saori Makishima
+  series: OreImo
+- name: Ruri Goko / Kuroneko
+  series: OreImo
   
   # Evangelion
 - name: Asuka Langley
@@ -370,6 +376,10 @@
   
   # Suzumiya Haruhi no Yuutsu
 - name: Haruhi Suzumiya
+  series: Suzumiya Haruhi no Yuutsu
+- name: Yuki Nagato
+  series: Suzumiya Haruhi no Yuutsu
+- name: Mikuru Asahina
   series: Suzumiya Haruhi no Yuutsu
   
   # Teekyu
