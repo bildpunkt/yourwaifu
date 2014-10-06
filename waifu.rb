@@ -39,7 +39,11 @@ loop do
           chosen_one = waifu.sample
           puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
           begin
-            client.update "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status:object
+            begin
+            client.update_with_media "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("/img/#{chosen_one["series"]}/#{chosen_one["name"]}.png"), in_reply_to_status:object
+            rescue Exception => m
+              puts "\034[31;1m[#{Time.new.to_s}] #{m.message} Trying to post tweet without image!\034[0m"
+              client.update "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status:object
           rescue Exception => e
             puts "\033[31;1m[#{Time.new.to_s}] #{e.message}\033[0m"
           end
