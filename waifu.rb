@@ -28,6 +28,9 @@ rescue Exception => e
   current_user.id = config["access_token"].split("-")[0]
 end
 
+puts "yourwaifu - serving #{waifu.count} entries"
+puts "-------------------------------"
+
 loop do
   streamer.user do |object|
     if object.is_a? Twitter::Tweet
