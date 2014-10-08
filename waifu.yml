@@ -133,6 +133,20 @@
   series: Fate/stay
 - name: Irisviel von Einzbern
   series: Fate/zero
+- name: Saber
+  series: Fate/extra
+- name: Berserker
+  series: Fate/stay night
+- name: Archer
+  series: Fate/stay night
+- name: Caster
+  series: Fate/stay night
+- name: Assassin
+  series: Fate
+- name: True Assassin
+  series: Fate
+- name: Avenger
+  series: Fate
   
   # OreImo
 - name: Ayase Aragaki
