@@ -163,9 +163,11 @@
   series: OreImo
   
   # Evangelion
-- name: Asuka Langley
+- name: Asuka Langley Soryu
   series: Evangelion
-- name: Misato Kitsuragi
+- name: Misato Katsuragi
+  series: Evangelion
+- name: Rei Ayanami
   series: Evangelion
   
   # No Game No Life
