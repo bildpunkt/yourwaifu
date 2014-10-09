@@ -163,9 +163,11 @@
   series: OreImo
   
   # Evangelion
-- name: Asuka Langley
+- name: Asuka Langley Soryu
   series: Evangelion
-- name: Misato Kitsuragi
+- name: Misato Katsuragi
+  series: Evangelion
+- name: Rei Ayanami
   series: Evangelion
   
   # No Game No Life
@@ -797,6 +799,7 @@
   series: Trinity Seven
 - name: Rogue
   series: Trinity Seven
+<<<<<<< HEAD
   
   # Nisekoi
 - name: Chitoge Kirisaki
@@ -833,3 +836,5 @@
   series: Hyouka
 - name: Kayo Zenna
   series: Hyouka
+=======
+>>>>>>> a2115873243c4394703bb3f8b9365c36d41b349d
