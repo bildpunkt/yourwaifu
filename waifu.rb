@@ -26,7 +26,7 @@ rescue Exception => e
   puts "Exception: #{e.message}"
   # best hack:
   current_user = OpenStruct.new
-  current_user.id = keys["access_token"].split("-")[0]
+  current_user.id = keys["access_token"].split("-")[0].to_i
 end
 
 puts "yourwaifu"
