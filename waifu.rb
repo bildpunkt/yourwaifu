@@ -48,7 +48,7 @@ loop do
 	    end
 	  end
 	  unless filtered.nil?
-            puts "\033[32;1m[#{Time.new.to_s}] Triggered filter: '#{filtered}'\033[0m"
+            puts "\033[32;1m[#{Time.new.to_s}] #{object.user.screen_name} triggered filter: '#{filtered}'\033[0m"
           else
             chosen_one = waifu.sample
             puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
