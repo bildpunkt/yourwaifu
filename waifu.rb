@@ -29,7 +29,10 @@ rescue Exception => e
   current_user.id = config["access_token"].split("-")[0]
 end
 
-puts "yourwaifu - serving #{waifu.count} entries"
+puts "yourwaifu"
+puts "-------------------------------"
+puts "serving \033[34;1m#{waifu.count}\033[0m entries"
+puts "filtering with \033[32;1m#{filter.count}\033[0m entries"
 puts "-------------------------------"
 
 loop do
@@ -39,7 +42,7 @@ loop do
         unless object.text.start_with? "RT @"
           filter.each do |f|
             if object.text.downcase.include? f.downcase
-              puts "\033[32;1m[#{Time.new.to_s}] Triggered filter: '#{f}'\033[0m"
+              puts "c[#{Time.new.to_s}] Triggered filter: '#{f}'\033[0m"
             else
               chosen_one = waifu.sample
               puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
