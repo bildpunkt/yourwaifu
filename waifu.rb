@@ -74,9 +74,9 @@ loop do
           end
         end
       end
+      end
     end
   end
 end
   sleep 1
-end
 end
