@@ -3,7 +3,7 @@ require "twitter"
 require "ostruct"
 
 keys = YAML.load_file File.expand_path(".", "config.yml")
-filter = YAML.load_file File.expand_path(".", "filter.yml")
+filter_words = YAML.load_file File.expand_path(".", "filter_words.yml")
 waifu = YAML.load_file File.expand_path(".", "waifu.yml")
 
 client = Twitter::REST::Client.new do |config|
@@ -40,15 +40,15 @@ loop do
     if object.is_a? Twitter::Tweet
       unless current_user.id == object.user.id
         unless object.text.start_with? "RT @"
-	  filtered = nil 
-          filter.each do |f|
-            if object.text.downcase.include? f.downcase
-              filtered = f
+	  filtered_words = nil 
+          filter_words.each do |fw|
+            if object.text.downcase.include? fw.downcase
+              filtered_words = fw
 	      break
 	    end
 	  end
-	  unless filtered.nil?
-            puts "\033[32;1m[#{Time.new.to_s}] #{object.user.screen_name} triggered filter: '#{filtered}'\033[0m"
+	  unless filtered_words.nil?
+            puts "\033[32;1m[#{Time.new.to_s}] #{object.user.screen_name} triggered filter: '#{filtered_words}'\033[0m"
           else
             chosen_one = waifu.sample
             puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
