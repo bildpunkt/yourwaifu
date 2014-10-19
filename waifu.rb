@@ -4,6 +4,7 @@ require "ostruct"
 
 keys = YAML.load_file File.expand_path(".", "config.yml")
 filter_words = YAML.load_file File.expand_path(".", "filter_words.yml")
+filter_users = YAML.load_file File.expand_path(".", "filter_users.yml")
 waifu = YAML.load_file File.expand_path(".", "waifu.yml")
 
 client = Twitter::REST::Client.new do |config|
@@ -40,21 +41,29 @@ loop do
     if object.is_a? Twitter::Tweet
       unless current_user.id == object.user.id
         unless object.text.start_with? "RT @"
-	  filtered_words = nil 
+          filtered_users = nil
+          filter_users.each do |fu|
+            if object.user.screen_name.downcase.include? fu.downcase
+              filtered_users = fu
+          break
+          filtered_words = nil 
           filter_words.each do |fw|
             if object.text.downcase.include? fw.downcase
               filtered_words = fw
-	      break
-	    end
-	  end
-	  unless filtered_words.nil?
-            puts "\033[32;1m[#{Time.new.to_s}] #{object.user.screen_name} triggered filter: '#{filtered_words}'\033[0m"
+          break
+        end
+      end
+      unless filtered_users.nil?
+        puts "\033[32;1m[#{Time.new.to_s}] #{filtered_users} is filtered\033[0m"
+        else
+        unless filtered_words.nil?
+          puts "\033[32;1m[#{Time.new.to_s}] #{object.user.screen_name} triggered filter: '#{filtered_words}'\033[0m"
           else
             chosen_one = waifu.sample
             puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
             begin
               begin
-              client.update_with_media "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.png"), in_reply_to_status:object
+                client.update_with_media "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.png"), in_reply_to_status:object
               rescue Exception => m
                 puts "\033[34;1m[#{Time.new.to_s}] #{m.message} Trying to post tweet without image!\033[0m"
                 client.update "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status:object
@@ -67,5 +76,6 @@ loop do
       end
     end
   end
+end
   sleep 1
 end
