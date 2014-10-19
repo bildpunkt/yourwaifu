@@ -73,6 +73,7 @@ loop do
                   puts "\033[31;1m[#{Time.new.to_s}] #{e.message}\033[0m"
                 end
           end
+      end
               end
             end
           end
