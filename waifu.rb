@@ -33,7 +33,8 @@ end
 puts "yourwaifu"
 puts "-------------------------------"
 puts "serving \033[34;1m#{waifu.count}\033[0m entries"
-puts "filtering with \033[32;1m#{filter.count}\033[0m entries"
+puts "filtering with \033[32;1m#{filter_words.count}\033[0m entries"
+puts "filtering \033[36;1m#{filter_users.count}\033[0m users"
 puts "-------------------------------"
 
 loop do
@@ -54,7 +55,7 @@ loop do
         end
       end
       unless filtered_users.nil?
-        puts "\033[32;1m[#{Time.new.to_s}] #{filtered_users} is filtered\033[0m"
+        puts "\033[36;1m[#{Time.new.to_s}] #{filtered_users} is filtered\033[0m"
         else
           unless filtered_words.nil?
             puts "\033[32;1m[#{Time.new.to_s}] #{object.user.screen_name} triggered filter: '#{filtered_words}'\033[0m"
