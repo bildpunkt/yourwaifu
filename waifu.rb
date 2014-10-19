@@ -34,7 +34,7 @@ puts "yourwaifu"
 puts "-------------------------------"
 puts "serving \033[34;1m#{waifu.count}\033[0m entries"
 puts "filtering with \033[32;1m#{filter_words.count}\033[0m entries"
-puts "filtering \033[36;1m#{filter_users.count}\033[0m users"
+# puts "filtering \033[36;1m#{filter_users.count}\033[0m users"
 puts "-------------------------------"
 
 loop do
@@ -42,11 +42,13 @@ loop do
     if object.is_a? Twitter::Tweet
       unless current_user.id == object.user.id
         unless object.text.start_with? "RT @"
+          =begin
           filtered_users = nil
           filter_users.each do |fu|
             if object.user.screen_name.downcase.include? fu.downcase
               filtered_users = fu
           break
+          =end
           filtered_words = nil 
           filter_words.each do |fw|
             if object.text.downcase.include? fw.downcase
@@ -54,9 +56,11 @@ loop do
           break
         end
       end
+      =begin
       unless filtered_users.nil?
         puts "\033[36;1m[#{Time.new.to_s}] #{filtered_users} is filtered\033[0m"
         else
+      =end
           unless filtered_words.nil?
             puts "\033[32;1m[#{Time.new.to_s}] #{object.user.screen_name} triggered filter: '#{filtered_words}'\033[0m"
             else
@@ -73,7 +77,7 @@ loop do
                   puts "\033[31;1m[#{Time.new.to_s}] #{e.message}\033[0m"
                 end
               end
-            end
+            # end
           end
         end
       end
