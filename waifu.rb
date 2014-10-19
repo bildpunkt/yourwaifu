@@ -42,13 +42,13 @@ loop do
     if object.is_a? Twitter::Tweet
       unless current_user.id == object.user.id
         unless object.text.start_with? "RT @"
-          =begin
+=begin
           filtered_users = nil
           filter_users.each do |fu|
             if object.user.screen_name.downcase.include? fu.downcase
               filtered_users = fu
           break
-          =end
+=end
           filtered_words = nil 
           filter_words.each do |fw|
             if object.text.downcase.include? fw.downcase
@@ -56,11 +56,11 @@ loop do
           break
         end
       end
-      =begin
+=begin
       unless filtered_users.nil?
         puts "\033[36;1m[#{Time.new.to_s}] #{filtered_users} is filtered\033[0m"
         else
-      =end
+=end
           unless filtered_words.nil?
             puts "\033[32;1m[#{Time.new.to_s}] #{object.user.screen_name} triggered filter: '#{filtered_words}'\033[0m"
             else
