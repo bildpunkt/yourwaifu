@@ -62,7 +62,7 @@ class Twitter::Tweet
   def raise_if_word_filtered!
     FILTER_WORDS.each do |fw|
       if self.text.downcase.include? fw.downcase
-        raise FilteredUserException, "#{self.user.screen_name} triggered filter: '#{fw}'"
+        raise FilteredTweetException, "#{self.user.screen_name} triggered filter: '#{fw}'"
       end
     end
   end
@@ -70,7 +70,7 @@ class Twitter::Tweet
   def raise_if_user_filtered!
     FILTER_USERS.each do |fu|
       if self.user.screen_name.downcase.include? fu.downcase
-        raise FilteredTweetException, "#{self.user.screen_name} is filtered, not going to reply"
+        raise FilteredUserException, "#{self.user.screen_name} is filtered, not going to reply"
       end
     end
   end
