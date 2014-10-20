@@ -70,7 +70,7 @@ class Twitter::Tweet
   def raise_if_user_filtered!
     FILTER_USERS.each do |fu|
       if self.user.screen_name.downcase.include? fu.downcase
-        raise FilteredTweetException, "#{self.user.screen_name} got filtered"
+        raise FilteredTweetException, "#{self.user.screen_name} is filtered, not going to reply"
       end
     end
   end
@@ -89,10 +89,9 @@ loop do
         puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
         if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.png", __FILE__)
           client.update_with_media "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.png"), in_reply_to_status:object
-          puts "[#{Time.new.to_s}] posted with image!"
         else
           client.update "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status:object
-          puts "[#{Time.new.to_s}] posted without image!"
+          puts "\033[34;1m[#{Time.new.to_s}] posted without image!\033[0m"
         end
       rescue NotImportantException => e
       rescue FilteredTweetException => e
