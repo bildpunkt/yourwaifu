@@ -551,7 +551,7 @@
   series: Persona
 - name: Tohru Adachi
   series: Persona
-- name: Rise Kujiwaka
+- name: Rise Kujikawa
   series: Persona
 - name: Margaret
   series: Persona
@@ -670,10 +670,6 @@
 - name: Akino Souma
   series: Tokyo Ravens
 - name: Miyo Kurahashi
-  series: Tokyo Ravens
-- name: Fumi Hasegawa
-  series: Tokyo Ravens
-- name: Yoriko Matsumoto
   series: Tokyo Ravens
   
   # Higurashi no Naku Koro ni
@@ -1149,3 +1145,15 @@
   series: Gochuumon wa Usagi Desu ka?
 - name: Mocha Hoto
   series: Gochuumon wa Usagi Desu ka?
+
+# Panty and Stocking with Garterbelt
+- name: Panty Anarchy
+  series: Panty and Stocking with Garterbelt
+- name: Stocking Anarchy
+  series: Panty and Stocking with Garterbelt
+- name: Briefers Rock
+  series: Panty and Stocking with Garterbelt
+
+# JoJo's Bizarre Adventure
+- name: Dio Brando
+  series: JoJo's Bizarre Adventure
