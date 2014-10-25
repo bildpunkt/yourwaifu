@@ -121,7 +121,7 @@ loop do
         if limited
           limited = false
           if keys['tumblr']['enabled']
-            tumblr_client.text(keys['tumblr']['blog_name'], title: "I'm back!", body: "Limit is gone now and you can get waifus again! [Unlimited since: #{Time.new.to_s}]")
+            tumblr_client.text(keys['tumblr']['blog_name'], title: "I'm back!", body: "The limit is gone now and you can get waifus/husbandos again! [Bot has been unlimited since: #{Time.new.to_s}]")
           end
         end
       rescue NotImportantException => e
