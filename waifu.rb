@@ -109,7 +109,7 @@ loop do
         if limited
           limited = false
           if keys['tumblr']['enabled']
-            tumblr_client.text("blog_name", :title => "I'm back!", :body => "such waifu much wow")
+            tumblr_client.text("blog_name", title: "I'm back!", body: "such waifu much wow")
           end
         end
       rescue NotImportantException => e
@@ -122,7 +122,7 @@ loop do
         if e.message.match /update limit/i and !limited
           limited = true
           if keys['tumblr']['enabled']
-            tumblr_client.text("blog_name", :title => "NO MORE WAIFU FOR U", :body => "I'm over my \"daily\" status update limit.")
+            tumblr_client.text("blog_name", title: "NO MORE WAIFU FOR U", body: "I'm over my \"daily\" status update limit.")
           end
         end
       end
