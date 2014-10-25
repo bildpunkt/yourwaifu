@@ -8,6 +8,7 @@ keys = YAML.load_file File.expand_path(".", "config.yml")
 FILTER_WORDS = YAML.load_file File.expand_path(".", "filter_words.yml")
 FILTER_USERS = YAML.load_file File.expand_path(".", "filter_users.yml")
 waifu = YAML.load_file File.expand_path(".", "waifu.yml")
+husbando = YAML.load_file File.expand_path(".", "husbando.yml")
 
 client = Twitter::REST::Client.new do |config|
   config.consumer_key = keys['twitter']['consumer_key']
@@ -101,8 +102,12 @@ loop do
         object.raise_if_retweet!
         object.raise_if_word_filtered!
         object.raise_if_user_filtered!
-        
-        chosen_one = waifu.sample
+        case object.text
+          when /husbando?/i
+            chosen_one = husbando.sample
+          else
+            chosen_one = waifu.sample
+        end
         puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
         if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.png", __FILE__)
           client.update_with_media "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.png"), in_reply_to_status:object
