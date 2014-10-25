@@ -1,26 +1,26 @@
   # Free!
 - name: Haruka Nanase
-  series: "Free!"
+  series: Free!
 - name: Makoto Tachibana
-  series: "Free!"
+  series: Free!
 - name: Nagisa Hazuki
-  series: "Free!"
+  series: Free!
 - name: Rei Ryugazaki
-  series: "Free!"
+  series: Free!
 - name: Rin Matsuoka
-  series: "Free!"
+  series: Free!
 - name: Sousuke Yamazaki
-  series: "Free!"
+  series: Free!
 - name: Aiichiro Nitori
-  series: "Free!"
+  series: Free!
 - name: Momotaro Mikoshiba
-  series: "Free!"
+  series: Free!
 - name: Seijuro Mikoshiba
-  series: "Free!"
+  series: Free!
 - name: Goro Sasabe
-  series: "Free!"
+  series: Free!
 - name: Ren Tachibana
-  series: "Free!"
+  series: Free!
   
   # Dramatical Murder
 - name: Aoba Seragaki
@@ -73,3 +73,21 @@
   series: Yowamushi Pedal
 - name: Midousuji Akira
   series: Yowamushi Pedal
+  
+  # Angel Beats!
+- name: Yuzuru Otonashi
+  series: Angel Beats!
+- name: Hideki Hinata
+  series: Angel Beats!
+- name: T.K.
+  series: Angel Beats!
+  
+  # Psycho-Pass
+- name: Shinya Kougami
+  series: Psycho-Pass
+- name: Shougo Makishima
+  series: Psycho-Pass
+- name: Nobuchika Ginoza
+  series: Psycho-Pass
+- name: Shuusei Kagari
+  series: Psycho-Pass
