@@ -126,7 +126,7 @@ loop do
         if e.message.match /update limit/i and !limited
           limited = true
           if keys['tumblr']['enabled']
-            tumblr_client.text(keys['tumblr']['blog_name'], title: "Bot is limited", body: "I reached \"daily\" limit for now, please wait a bit before mentioning me again! [Limited since: #{Time.new.to_s}]")
+            tumblr_client.text(keys['tumblr']['blog_name'], title: "Bot is limited", body: "I've reached the \"daily\" limit for now! Please wait a bit before mentioning me again. [Bot has been limited since: #{Time.new.to_s}]")
           end
         end
       end
