@@ -14,10 +14,25 @@ A twitter bot that will respond to mentions with a randomly picked person, which
 
 * Ruby, *should be a package simply called* `ruby` *for your \*nix system*, or use RubyInstaller.
 * Twitter `gem install twitter`
+* **Optional:** Tumblr `gem install tumblr_client`
 
 ### Making it Work
 
-Add your consumer/access token keys/secrets to `config.yml.example` and rename it to `config.yml`
+#### Twitter
+
+* Go to [Twitter Apps](https://apps.twitter.com/) and create a new application
+* Generate your consumer/access token keys/secrets for Read and Write access
+* Add your consumer/access token keys/secrets to `config.yml.example` and rename it to `config.yml`
+
+#### Tumblr
+
+If you want to post updates to Tumblr when the bot is limited, do the following:
+
+* In `config.yml` set `enabled` to true and add the name of your blog
+* Go to [Tumblr](https://www.tumblr.com/oauth/apps) and create a new application
+* Add your consumer/access token keys/secrets to the config file
+
+After you added the keys, simply execute `ruby waifu.rb` and it should work!
 
 ## Contributing
 
@@ -45,3 +60,7 @@ Afterwards, just zip the file, upload it to any filehoster and put the link in a
 * [nilsding](http://github.com/nilsding) for help with coding
 * [SakisaKawaii](http://twitter.com/SakisaKawaii) for help with the request listing
 * Everyone who contributes to the list!
+
+## License
+
+yourwaifu(bot) is licensed under the [MIT License](http://opensource.org/licenses/MIT)
