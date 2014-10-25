@@ -4,11 +4,12 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
+version = "v2.0.1"
 keys = YAML.load_file File.expand_path(".", "config.yml")
-FILTER_WORDS = YAML.load_file File.expand_path(".", "filter_words.yml")
-FILTER_USERS = YAML.load_file File.expand_path(".", "filter_users.yml")
-waifu = YAML.load_file File.expand_path(".", "waifu.yml")
-husbando = YAML.load_file File.expand_path(".", "husbando.yml")
+FILTER_WORDS = YAML.load_file File.expand_path(".", "filters/words.yml")
+FILTER_USERS = YAML.load_file File.expand_path(".", "filters/users.yml")
+waifu = YAML.load_file File.expand_path(".", "lists/waifu.yml")
+husbando = YAML.load_file File.expand_path(".", "lists/husbando.yml")
 
 client = Twitter::REST::Client.new do |config|
   config.consumer_key = keys['twitter']['consumer_key']
@@ -46,7 +47,7 @@ rescue Exception => e
   $current_user.id = keys['twitter']["access_token"].split("-")[0].to_i
 end
 
-puts "yourwaifu"
+puts "yourwaifu #{version}"
 puts "-------------------------------"
 puts "waifu entries: \033[34;1m#{waifu.count}\033[0m"
 puts "husbando entries: \033[34;1m#{husbando.count}\033[0m"
