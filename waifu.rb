@@ -29,7 +29,12 @@ if keys['tumblr']['enabled'] == true
     config.oauth_token = keys['tumblr']['access_token']
     config.oauth_token_secret = keys['tumblr']['access_token_secret']
   end
+  
+  tumblr_client = Tumblr::Client.new
 end
+
+limited = false
+already_posted = false
 
 begin
   $current_user = client.current_user
@@ -102,6 +107,7 @@ loop do
           client.update "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status:object
           puts "\033[34;1m[#{Time.new.to_s}] posted without image!\033[0m"
         end
+        limited = false
       rescue NotImportantException => e
       rescue FilteredTweetException => e
         puts "\033[32;1m[#{Time.new.to_s}] #{e.message}\033[0m"
@@ -109,6 +115,12 @@ loop do
         puts "\033[36;1m[#{Time.new.to_s}] #{e.message}\033[0m"
       rescue Exception => e
         puts "\033[31;1m[#{Time.new.to_s}] #{e.message}\033[0m"
+        if e.message.include? "user is over daily status update limit"
+          limited = true
+        end
+        if limited and keys['tumblr']['enabled']
+          
+        end
       end
     end
   end
