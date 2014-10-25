@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require "yaml"
 require "twitter"
+require "tumblr_client"
 require "ostruct"
 
 keys = YAML.load_file File.expand_path(".", "config.yml")
