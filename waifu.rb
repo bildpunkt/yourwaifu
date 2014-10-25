@@ -9,17 +9,26 @@ FILTER_USERS = YAML.load_file File.expand_path(".", "filter_users.yml")
 waifu = YAML.load_file File.expand_path(".", "waifu.yml")
 
 client = Twitter::REST::Client.new do |config|
-  config.consumer_key = keys['consumer_key']
-  config.consumer_secret = keys['consumer_secret']
-  config.access_token = keys['access_token']
-  config.access_token_secret = keys['access_token_secret']
+  config.consumer_key = keys['twitter']['consumer_key']
+  config.consumer_secret = keys['twitter']['consumer_secret']
+  config.access_token = keys['twitter']['access_token']
+  config.access_token_secret = keys['twitter']['access_token_secret']
 end
  
 streamer = Twitter::Streaming::Client.new do |config|
-  config.consumer_key = keys['consumer_key']
-  config.consumer_secret = keys['consumer_secret']
-  config.access_token = keys['access_token']
-  config.access_token_secret = keys['access_token_secret']
+  config.consumer_key = keys['twitter']['consumer_key']
+  config.consumer_secret = keys['twitter']['consumer_secret']
+  config.access_token = keys['twitter']['access_token']
+  config.access_token_secret = keys['twitter']['access_token_secret']
+end
+
+if keys['tumblr']['enabled'] == true
+  Tumblr.configure do |config|
+    config.consumer_key = keys['tumblr']['consumer_key']
+    config.consumer_secret = keys['tumblr']['consumer_secret']
+    config.oauth_token = keys['tumblr']['access_token']
+    config.oauth_token_secret = keys['tumblr']['access_token_secret']
+  end
 end
 
 begin
@@ -28,7 +37,7 @@ rescue Exception => e
   puts "Exception: #{e.message}"
   # best hack:
   $current_user = OpenStruct.new
-  $current_user.id = keys["access_token"].split("-")[0].to_i
+  $current_user.id = keys['twitter']["access_token"].split("-")[0].to_i
 end
 
 puts "yourwaifu"
