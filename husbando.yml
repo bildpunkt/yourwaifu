@@ -91,3 +91,397 @@
   series: Psycho-Pass
 - name: Shuusei Kagari
   series: Psycho-Pass
+  
+  # Code Geass
+- name: Lelouche Lamperouge
+  series: Code Geass
+- name: Suzaku Kururugi
+  series: Code Geass
+  
+  # Corpse Party
+- name: Yoshiki Kishinuma
+  series: Corpse Party
+- name: Satoshi Mochida
+  series: Corpse Party
+- name: Sakutaro Morishige
+  series: Corpse Party
+- name: Yuuya Kizami
+  series: Corpse Party
+
+  # Fullmetal Alchemist
+- name: Roy Mustang
+  series: Fullmetal Alchemist
+- name: Edward Elric
+  series: Fullmetal Alchemist
+- name: Alphonse Elric
+  series: Fullmetal Alchemist
+- name: Greed
+  series: Fullmetal Alchemist
+- name: Alex Louis Armstrong
+  series: Fullmetal Alchemist
+- name: Van Hohenheim
+  series: Fullmetal Alchemist
+- name: Maes Hughes
+  series: Fullmetal Alchemist
+- name: Ling Yao
+  series: Fullmetal Alchemist
+  
+  # Kaichou wa Maid-sama!
+- name: Takumi Usui
+  series: Kaichou wa Maid-sama!
+  
+  # Mawaru Penguindrum
+- name: Kanba Takakura
+  series: Mawaru Penguindrum
+- name: Shouma Takakura
+  series: Mawaru Penguindrum
+  
+  # Mirai Nikki
+- name: Aru Akise
+  series: Mirai Nikki
+  
+  # Evangelion
+- name: Shinji Ikari
+  series: Evangelion
+  
+  # Mahou Shoujo Madoka Magica
+- name: Sayaka Miki
+  series: Mahou Shoujo Madoka Magica
+  
+  # Sakurasou no Pet na Kanojo
+- name: Sorata Kanda
+  series: Sakurasou no Pet na Kanojo
+- name: Jin Mitaka
+  series: Sakurasou no Pet na Kanojo
+- name: Ryuunosuke Akasaka
+  series: Sakurasou no Pet na Kanojo
+  
+  # Shingeki no Kyojin
+- name: Mikasa Ackerman
+  series: Shingeki no Kyojin
+  
+  # Steins;Gate
+- name: Okabe Rintarou
+  series: Steins;Gate
+- name: Rukako Urushibara
+  series: Steins;Gate
+  
+  # Tengen Toppa Gurren Lagann
+- name: Kamina
+  series: Tengen Toppa
+- name: Simon
+  series: Tengen Toppa
+- name: Boota
+  series: Tengen Toppa
+- name: Viral
+  series: Tengen Toppa
+  
+  # The Idolm@ster
+- name: Producer
+  series: The Idolm@ster
+  
+  # Toradora
+- name: Ryuuji Takasu
+  series: Toradora
+- name: Yuusaku Kitamura
+  series: Toradora
+  
+  # Aldnoah.Zero
+- name: Inaho Kaizuka
+  series: Aldnoah.Zero
+- name: Slaine Troyard
+  series: Aldnoah.Zero
+  
+  # Amnesia
+- name: Orion
+  series: Amnesia
+- name: Ukyo
+  series: Amnesia
+- name: Ikki
+  series: Amnesia
+- name: Toma
+  series: Amnesia
+- name: Shin
+  series: Amnesia
+- name: Kent
+  series: Amnesia
+  
+  # Ao Haru Ride
+- name: Kou Mabuchi 
+  series: Ao Haru Ride
+- name: Touma Kikuchi
+  series: Ao Haru Ride
+- name: Youichi Tanaka
+  series: Ao Haru Ride
+- name: Aya Kominato
+  series: Ao Haru Ride
+  
+  # Diabolik Lovers
+- name: Ayato Sakamaki
+  series: Diabolik Lovers
+- name: Kanato Sakamaki
+  series: Diabolik Lovers
+- name: Laito Sakamaki
+  series: Diabolik Lovers
+- name: Shu Sakamaki
+  series: Diabolik Lovers
+- name: Reiji Sakamaki
+  series: Diabolik Lovers
+- name: Subaru Sakamaki
+  series: Diabolik Lovers
+  
+  # Gekkan Shoujo Nozaki-kun
+- name: Umetarou Nozaki
+  series: Gekkan Shoujo Nozaki-kun
+- name: Mikoto Mikoshiba
+  series: Gekkan Shoujo Nozaki-kun
+- name: Hirotaka Wakamatsu
+  series: Gekkan Shoujo Nozaki-kun
+- name: Yuu Kashima
+  series: Gekkan Shoujo Nozaki-kun
+- name: Masayuki Hori
+  series: Gekkan Shoujo Nozaki-kun
+  
+  # Glasslip
+- name: Yukinari Imi
+  series: Glasslip
+- name: Kakeru Okikura
+  series: Glasslip
+- name: Hiro Shirosaki
+  series: Glasslip
+  
+  # Golden Time
+- name: Banri Tada
+  series: Golden Time
+- name: Mitsuo Yanagisawa
+  series: Golden Time
+- name: Takaya "2D-kun" Satou
+  series: Golden Time
+  
+  # Guilty Crown
+- name: Shu Ouma
+  series: Guilty Crown
+- name: Gai Tsutsugami
+  series: Guilty Crown
+- name: Daryl Yan
+  series: Guilty Crown
+- name: Kenji Kido
+  series: Guilty Crown
+  
+  # Hamatora
+- name: Nice
+  series: Hamatora
+- name: Murasaki
+  series: Hamatora
+- name: Art
+  series: Hamatora
+- name: Ratio
+  series: Hamatora
+- name: Birthday
+  series: Hamatora
+  
+  # Kimi ni Todoke
+- name: Shouta Kazehaya
+  series: Kimi ni Todoke
+- name: Ryuu Sanada
+  series: Kimi ni Todoke
+- name: Kento Miura
+  series: Kimi ni Todoke
+  
+  # Kuroko no Basket
+- name: Taiga Kagami
+  series: Kuroko no Basket
+- name: Tetsuya Kuroko
+  series: Kuroko no Basket
+- name: Seijuro Akashi
+  series: Kuroko no Basket
+- name: Daiki Aomine
+  series: Kuroko no Basket
+- name: Shintarou Midorima
+  series: Kuroko no Basket
+- name: Ryouta Kise
+  series: Kuroko no Basket
+- name: Atsushi Murasakibara
+  series: Kuroko no Basket
+- name: Shinji Koganei
+  series: Kuroko no Basket
+- name: Teppei Kiyoshi
+  series: Kuroko no Basket
+- name: Rinnosuke Mitobe
+  series: Kuroko no Basket
+- name: Kazunari Takao
+  series: Kuroko no Basket
+- name: Junpei Hyuuga
+  series: Kuroko no Basket
+- name: Shoichi Imayoshi
+  series: Kuroko no Basket
+- name: Shun Izuki
+  series: Kuroko no Basket
+- name: Yukio Kasamatsu
+  series: Kuroko no Basket
+- name: Ryuuhei Kasuga
+  series: Kuroko no Basket
+  
+  # Mekakucity Actors
+- name: Shintaro Kisaragi
+  series: Mekakucity Actors
+- name: Shuuya Kano
+  series: Mekakucity Actors
+- name: Haruka Kokonose
+  series: Mekakucity Actors
+- name: Hibiya Amamiya
+  series: Mekakucity Actors
+- name: Kousuke Seto
+  series: Mekakucity Actors
+  
+  # Nagi no Asukara
+- name: Hikari Sakishima
+  series: Nagi no Asukara
+- name: Tsumugu Kihara
+  series: Nagi no Asukara
+- name: Kaname Isaki
+  series: Nagi no Asukara
+- name: Uroko
+  series: Nagi no Asukara
+  
+  # Noragami
+- name: Yato
+  series: Noragami
+- name: Yukine
+  series: Noragami
+- name: Kazuma
+  series: Noragami
+  
+  # Tokyo Ghoul
+- name: Ken Kaneki
+  series: Tokyo Ghoul
+- name: Uta
+  series: Tokyo Ghoul
+  
+  # Tonari no Kaibutsu-kun
+- name: Haru Yoshida
+  series: Tonari no Kaibutsu-kun
+- name: Misuyoshi Misawa
+  series: Tonari no Kaibutsu-kun
+- name: Souhei Sasahara
+  series: Tonari no Kaibutsu-kun
+- name: Kenji Yamaguchi
+  series: Tonari no Kaibutsu-kun
+- name: Yuuzan Yoshida
+  series: Tonari no Kaibutsu-kun
+  
+  # Vampire Knight
+- name: Zero Kiryuu
+  series: Vampire Knight
+- name: Kaname Kuran
+  series: Vampire Knight
+- name: Hanabusa Aidou
+  series: Vampire Knight
+- name: Ichiru Kiryuu
+  series: Vampire Knight
+- name: Senri Shiki
+  series: Vampire Knight
+- name: Akatsuki Kain
+  series: Vampire Knight
+- name: Takuma Ichijou
+  series: Vampire Knight
+  
+  # Sukitte Ii Na Yo
+- name: Yamato Kurosawa
+  series: Sukitte Ii Na Yo
+- name: Kakeru Hayakawa
+  series: Sukitte Ii Na Yo
+- name: Kai Takemura
+  series: Sukitte Ii Na Yo
+  
+  # Hirunaka no Ryuusei
+- name: Daiki Mamura
+  series: Hirunaka no Ryuusei
+- name: Satsuki Shishio
+  series: Hirunaka no Ryuusei
+- name: Togyuu Minagawa
+  series: Hirunaka no Ryuusei
+  
+  # Horimiya
+- name: Izumi Miyamura
+  series: Horimiya
+- name: Tooru Ishikawa
+  series: Horimiya
+- name: Kakeru Sengoku
+  series: Horimiya
+  
+  # Last Game
+- name: Naoto Yanagi
+  series: Last Game
+- name: Hotaru Souma
+  series: Last Game
+  
+  # Orange
+- name: Kakeru Naruse
+  series: Orange
+- name: Hiroto Suwa
+  series: Orange
+- name: Saku Hagita
+  series: Orange
+  
+  # Taiyou no Ie
+- name: Hiro Nakamura
+  series: Taiyou no Ie
+- name: Daiki Nakamura
+  series: Taiyou no Ie
+- name: Oda
+  series: Taiyou no Ie
+  
+  # Yumemiru Taiyou
+- name: Taiga Fujiwara
+  series: Yumemiru Taiyou
+- name: Zen Nakajou
+  series: Yumemiru Taiyou
+- name: Asahi Tatsugae
+  series: Yumemiru Taiyou
+  
+  # Monokuro Shounen Shoujo
+- name: Ukyou
+  series: Monokuro Shounen Shoujo
+- name: Chigaya
+  series: Monokuro Shounen Shoujo
+- name: Kion
+  series: Monokuro Shounen Shoujo
+  
+  # Death Note
+- name: Light Yagami
+  series: Death Note
+- name: L Lawliet
+  series: Death Note
+- name: Nate "Near" River 
+  series: Death Note
+- name: Mihael "Mello" Keehl
+  series: Death Note
+  
+  # Brothers Conflict
+- name: Masaomi Asahina
+  series: Brothers Conflict
+- name: Ukyo Asahina
+  series: Brothers Conflict
+- name: Kaname Asahina
+  series: Brothers Conflict
+- name: Hikaru Asahina
+  series: Brothers Conflict
+- name: Tsubaki Asahina
+  series: Brothers Conflict
+- name: Azusa Asahina
+  series: Brothers Conflict
+- name: Natsume Asahina
+  series: Brothers Conflict
+- name: Louis Asahina
+  series: Brothers Conflict
+- name: Subaru Asahina
+  series: Brothers Conflict
+- name: Iori Asahina
+  series: Brothers Conflict
+- name: Yuusuke Asahina
+  series: Brothers Conflict
+- name: Futo Asahina
+  series: Brothers Conflict
+- name: Wataru Asahina
+  series: Brothers Conflict
