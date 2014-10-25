@@ -22,7 +22,7 @@ streamer = Twitter::Streaming::Client.new do |config|
   config.access_token_secret = keys['twitter']['access_token_secret']
 end
 
-if keys['tumblr']['enabled'] == true
+if keys['tumblr']['enabled']
   Tumblr.configure do |config|
     config.consumer_key = keys['tumblr']['consumer_key']
     config.consumer_secret = keys['tumblr']['consumer_secret']
@@ -34,7 +34,6 @@ if keys['tumblr']['enabled'] == true
 end
 
 limited = false
-already_posted = false
 
 begin
   $current_user = client.current_user
@@ -107,7 +106,12 @@ loop do
           client.update "@#{object.user.screen_name} Your waifu is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status:object
           puts "\033[34;1m[#{Time.new.to_s}] posted without image!\033[0m"
         end
-        limited = false
+        if limited
+          limited = false
+          if keys['tumblr']['enabled']
+            tumblr_client.text("blog_name", :title => "I'm back!", :body => "such waifu much wow")
+          end
+        end
       rescue NotImportantException => e
       rescue FilteredTweetException => e
         puts "\033[32;1m[#{Time.new.to_s}] #{e.message}\033[0m"
@@ -115,11 +119,11 @@ loop do
         puts "\033[36;1m[#{Time.new.to_s}] #{e.message}\033[0m"
       rescue Exception => e
         puts "\033[31;1m[#{Time.new.to_s}] #{e.message}\033[0m"
-        if e.message.include? "user is over daily status update limit"
+        if e.message.match /update limit/i and !limited
           limited = true
-        end
-        if limited and keys['tumblr']['enabled']
-          
+          if keys['tumblr']['enabled']
+            tumblr_client.text("blog_name", :title => "NO MORE WAIFU FOR U", :body => "I'm over my \"daily\" status update limit.")
+          end
         end
       end
     end
