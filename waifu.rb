@@ -49,6 +49,9 @@ puts "-------------------------------"
 puts "serving \033[34;1m#{waifu.count}\033[0m entries"
 puts "filtering with \033[32;1m#{FILTER_WORDS.count}\033[0m entries"
 puts "filtering \033[36;1m#{FILTER_USERS.count}\033[0m users"
+if keys['tumblr']['enabled']
+  puts "\033[33;1mposting to Tumblr if status limit occurs\033[0m"
+end
 puts "-------------------------------"
 
 class NotImportantException < Exception
@@ -109,7 +112,7 @@ loop do
         if limited
           limited = false
           if keys['tumblr']['enabled']
-            tumblr_client.text("blog_name", title: "I'm back!", body: "such waifu much wow")
+            tumblr_client.text(keys['tumblr']['blog_name'], title: "I'm back!", body: "Limit is gone now and you can get waifus again! [Unlimited since: #{Time.new.to_s}]")
           end
         end
       rescue NotImportantException => e
@@ -122,7 +125,7 @@ loop do
         if e.message.match /update limit/i and !limited
           limited = true
           if keys['tumblr']['enabled']
-            tumblr_client.text("blog_name", title: "NO MORE WAIFU FOR U", body: "I'm over my \"daily\" status update limit.")
+            tumblr_client.text(keys['tumblr']['blog_name'], title: "Bot is limited", body: "I reached \"daily\" limit for now, please wait a bit before mentioning me again! [Limited since: #{Time.new.to_s}]")
           end
         end
       end
