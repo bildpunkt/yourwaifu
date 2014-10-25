@@ -27,8 +27,6 @@
   series: Katawa Shoujo
 - name: Rin Tezuka
   series: Katawa Shoujo
-- name: Kenji Setou
-  series: Katawa Shoujo
 - name: Suzu Suzuki
   series: Katawa Shoujo
   
@@ -45,8 +43,6 @@
   series: Gokukoku no Brynhildr
   
   # Steins;Gate
-- name: Rintaro Okabe
-  series: Steins;Gate
 - name: Kurisu Makise
   series: Steins;Gate
 - name: Mayuri Shiina
@@ -54,15 +50,15 @@
 - name: Ruka Urushibara
   series: Steins;Gate
   
-  # To Aru Kagaku no Railgun
+  # Toaru Kagaku no Railgun
 - name: Misaka Mikoto
-  series: To Aru Kagaku no Railgun
+  series: Toaru Kagaku no Railgun
 - name: Ruiko Saten
-  series: To Aru Kagaku no Railgun
+  series: Toaru Kagaku no Railgun
 - name: Kazari Uiharu
-  series: To Aru Kagaku no Railgun
+  series: Toaru Kagaku no Railgun
 - name: Kuroko Shirai
-  series: To Aru Kagaku no Railgun
+  series: Toaru Kagaku no Railgun
   
   # Monogatari Series
 - name: Tsukihi Araragi
@@ -384,6 +380,8 @@
   
   # Shingeki no Kyojin
 - name: Mikasa Ackerman
+  series: Shingeki no Kyojin
+- name: Sasha Blouse
   series: Shingeki no Kyojin
   
   # Shinsekai Yori
