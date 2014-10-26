@@ -10,6 +10,7 @@ FILTER_WORDS = YAML.load_file File.expand_path(".", "filters/words.yml")
 FILTER_USERS = YAML.load_file File.expand_path(".", "filters/users.yml")
 waifu = YAML.load_file File.expand_path(".", "lists/waifu.yml")
 husbando = YAML.load_file File.expand_path(".", "lists/husbando.yml")
+imouto = YAML.load_file File.expand_path(".", "lists/imouto.yml")
 
 client = Twitter::REST::Client.new do |config|
   config.consumer_key = keys['twitter']['consumer_key']
@@ -108,6 +109,9 @@ loop do
           when /husbando?/i
             chosen_one = husbando.sample
             chosen_one['title'] = "husbando"
+          when /imouto?/i
+            chosen_one = imouto.sample
+            chosen_one['title'] = "imouto"
           else
             chosen_one = waifu.sample
             chosen_one['title'] = "waifu"
