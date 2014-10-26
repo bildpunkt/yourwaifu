@@ -50,14 +50,18 @@ end
 
 puts "yourwaifu #{version}"
 puts "-------------------------------"
-puts "waifu entries: \033[34;1m#{waifu.count}\033[0m"
-puts "husbando entries: \033[34;1m#{husbando.count}\033[0m"
-puts "filtering with \033[32;1m#{FILTER_WORDS.count}\033[0m entries"
-puts "filtering \033[36;1m#{FILTER_USERS.count}\033[0m users"
-if keys['tumblr']['enabled']
-  puts "\033[32;1mposting to Tumblr if status limit occurs\033[0m"
-end
+puts "Entries: [\033[34;1m#{waifu.count}\033[0m] waifu"
+puts "         [\033[34;1m#{husbando.count}\033[0m] husbando"
+puts "         [\033[34;1m #{imouto.count}\033[0m] imouto"
 puts "-------------------------------"
+puts "Filters: [ \033[33;1m#{FILTER_WORDS.count}\033[0m] words"
+puts "         [  \033[33;1m#{FILTER_USERS.count}\033[0m] users"
+puts "-------------------------------"
+if keys['tumblr']['enabled']
+  puts "\033[36;1mposting to Tumblr if status limit occurs\033[0m"
+  puts "-------------------------------"
+end
+
 
 class NotImportantException < Exception
 end
