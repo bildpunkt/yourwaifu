@@ -1,493 +1,693 @@
   # Free!
 - name: Haruka Nanase
   series: Free!
+  filetype: png
 - name: Makoto Tachibana
   series: Free!
+  filetype: png
 - name: Nagisa Hazuki
   series: Free!
+  filetype: png
 - name: Rei Ryugazaki
   series: Free!
+  filetype: png
 - name: Rin Matsuoka
   series: Free!
+  filetype: png
 - name: Sousuke Yamazaki
   series: Free!
+  filetype: png
 - name: Aiichiro Nitori
   series: Free!
+  filetype: png
 - name: Momotaro Mikoshiba
   series: Free!
+  filetype: png
 - name: Seijuro Mikoshiba
   series: Free!
+  filetype: png
 - name: Goro Sasabe
   series: Free!
+  filetype: png
 - name: Ren Tachibana
   series: Free!
+  filetype: png
   
   # Dramatical Murder
 - name: Aoba Seragaki
   series: Dramatical Murder
+  filetype: png
 - name: Koujaku
   series: Dramatical Murder
+  filetype: png
 - name: Noiz
   series: Dramatical Murder
+  filetype: png
 - name: Mink
   series: Dramatical Murder
+  filetype: png
 - name: Clear
   series: Dramatical Murder
+  filetype: png
 - name: Virus
   series: Dramatical Murder
+  filetype: png
 - name: Trip
   series: Dramatical Murder
+  filetype: png
 
   # Yowamushi Pedal
 - name: Onoda Sakamichi
   series: Yowamushi Pedal
+  filetype: png
 - name: Imaizumi Shunsuke
   series: Yowamushi Pedal
+  filetype: png
 - name: Naruko Shoukichi
   series: Yowamushi Pedal
+  filetype: png
 - name: Kinjou Shingo
   series: Yowamushi Pedal
+  filetype: png
 - name: Makishima Yuusuke
   series: Yowamushi Pedal
+  filetype: png
 - name: Tadokoro Jin
   series: Yowamushi Pedal
+  filetype: png
 - name: Teshima Junta
   series: Yowamushi Pedal
+  filetype: png
 - name: Aoyagi Hajime
   series: Yowamushi Pedal
+  filetype: png
 - name: Sugimoto Terufumi
   series: Yowamushi Pedal
+  filetype: png
 - name: Manami Sangaku
   series: Yowamushi Pedal
+  filetype: png
 - name: Toudou Jinpachi
   series: Yowamushi Pedal
+  filetype: png
 - name: Juichi Fukutomi
   series: Yowamushi Pedal
+  filetype: png
 - name: Shinkai Hayato
   series: Yowamushi Pedal
+  filetype: png
 - name: Arakita Yasutomo
   series: Yowamushi Pedal
+  filetype: png
 - name: Izumida Touichirou
   series: Yowamushi Pedal
+  filetype: png
 - name: Kuroda Yukinari
   series: Yowamushi Pedal
+  filetype: png
 - name: Midousuji Akira
   series: Yowamushi Pedal
+  filetype: png
   
   # Angel Beats!
 - name: Yuzuru Otonashi
   series: Angel Beats!
+  filetype: png
 - name: Hideki Hinata
   series: Angel Beats!
+  filetype: png
 - name: T.K.
   series: Angel Beats!
+  filetype: png
   
   # Psycho-Pass
 - name: Shinya Kougami
   series: Psycho-Pass
+  filetype: png
 - name: Shougo Makishima
   series: Psycho-Pass
+  filetype: png
 - name: Nobuchika Ginoza
   series: Psycho-Pass
+  filetype: png
 - name: Shuusei Kagari
   series: Psycho-Pass
+  filetype: png
   
   # Code Geass
 - name: Lelouche Lamperouge
   series: Code Geass
+  filetype: png
 - name: Suzaku Kururugi
   series: Code Geass
+  filetype: png
   
   # Corpse Party
 - name: Yoshiki Kishinuma
   series: Corpse Party
+  filetype: png
 - name: Satoshi Mochida
   series: Corpse Party
+  filetype: png
 - name: Sakutaro Morishige
   series: Corpse Party
+  filetype: png
 - name: Yuuya Kizami
   series: Corpse Party
+  filetype: png
 
   # Fullmetal Alchemist
 - name: Roy Mustang
   series: Fullmetal Alchemist
+  filetype: png
 - name: Edward Elric
   series: Fullmetal Alchemist
+  filetype: png
 - name: Alphonse Elric
   series: Fullmetal Alchemist
+  filetype: png
 - name: Greed
   series: Fullmetal Alchemist
+  filetype: png
 - name: Alex Louis Armstrong
   series: Fullmetal Alchemist
+  filetype: png
 - name: Van Hohenheim
   series: Fullmetal Alchemist
+  filetype: png
 - name: Maes Hughes
   series: Fullmetal Alchemist
+  filetype: png
 - name: Ling Yao
   series: Fullmetal Alchemist
+  filetype: png
   
   # Kaichou wa Maid-sama!
 - name: Takumi Usui
   series: Kaichou wa Maid-sama!
+  filetype: png
   
   # Mawaru Penguindrum
 - name: Kanba Takakura
   series: Mawaru Penguindrum
+  filetype: png
 - name: Shouma Takakura
   series: Mawaru Penguindrum
+  filetype: png
   
   # Mirai Nikki
 - name: Aru Akise
   series: Mirai Nikki
+  filetype: png
   
   # Evangelion
 - name: Shinji Ikari
   series: Evangelion
+  filetype: png
   
   # Mahou Shoujo Madoka Magica
 - name: Sayaka Miki
   series: Mahou Shoujo Madoka Magica
+  filetype: png
   
   # Sakurasou no Pet na Kanojo
 - name: Sorata Kanda
   series: Sakurasou no Pet na Kanojo
+  filetype: png
 - name: Jin Mitaka
   series: Sakurasou no Pet na Kanojo
+  filetype: png
 - name: Ryuunosuke Akasaka
   series: Sakurasou no Pet na Kanojo
+  filetype: png
   
   # Shingeki no Kyojin
 - name: Eren Yeager
   series: Shingeki no Kyojin
+  filetype: png
 - name: Levi Ackerman
   series: Shingeki no Kyojin
+  filetype: png
   
   # Steins;Gate
 - name: Okabe Rintarou
   series: Steins;Gate
+  filetype: png
 - name: Ruka Urushibara
   series: Steins;Gate
+  filetype: png
   
   # Tengen Toppa Gurren Lagann
 - name: Kamina
   series: Tengen Toppa Gurren Lagann
+  filetype: png
 - name: Simon
   series: Tengen Toppa Gurren Lagann
+  filetype: png
 - name: Boota
   series: Tengen Toppa Gurren Lagann
+  filetype: png
 - name: Viral
   series: Tengen Toppa Gurren Lagann
+  filetype: png
   
   # The Idolm@ster
 - name: Producer
   series: The Idolm@ster
+  filetype: png
   
   # Toradora
 - name: Ryuuji Takasu
   series: Toradora
+  filetype: png
 - name: Yuusaku Kitamura
   series: Toradora
+  filetype: png
   
   # Aldnoah.Zero
 - name: Inaho Kaizuka
   series: Aldnoah.Zero
+  filetype: png
 - name: Slaine Troyard
   series: Aldnoah.Zero
+  filetype: png
   
   # Amnesia
 - name: Orion
   series: Amnesia
+  filetype: png
 - name: Ukyo
   series: Amnesia
+  filetype: png
 - name: Ikki
   series: Amnesia
+  filetype: png
 - name: Toma
   series: Amnesia
+  filetype: png
 - name: Shin
   series: Amnesia
+  filetype: png
 - name: Kent
   series: Amnesia
+  filetype: png
   
   # Ao Haru Ride
 - name: Kou Mabuchi 
   series: Ao Haru Ride
+  filetype: png
 - name: Touma Kikuchi
   series: Ao Haru Ride
+  filetype: png
 - name: Youichi Tanaka
   series: Ao Haru Ride
+  filetype: png
 - name: Aya Kominato
   series: Ao Haru Ride
+  filetype: png
   
   # Diabolik Lovers
 - name: Ayato Sakamaki
   series: Diabolik Lovers
+  filetype: png
 - name: Kanato Sakamaki
   series: Diabolik Lovers
+  filetype: png
 - name: Laito Sakamaki
   series: Diabolik Lovers
+  filetype: png
 - name: Shu Sakamaki
   series: Diabolik Lovers
+  filetype: png
 - name: Reiji Sakamaki
   series: Diabolik Lovers
+  filetype: png
 - name: Subaru Sakamaki
   series: Diabolik Lovers
+  filetype: png
   
   # Gekkan Shoujo Nozaki-kun
 - name: Umetarou Nozaki
   series: Gekkan Shoujo Nozaki-kun
+  filetype: png
 - name: Mikoto Mikoshiba
   series: Gekkan Shoujo Nozaki-kun
+  filetype: png
 - name: Hirotaka Wakamatsu
   series: Gekkan Shoujo Nozaki-kun
+  filetype: png
 - name: Yuu Kashima
   series: Gekkan Shoujo Nozaki-kun
+  filetype: png
 - name: Masayuki Hori
   series: Gekkan Shoujo Nozaki-kun
+  filetype: png
   
   # Glasslip
 - name: Yukinari Imi
   series: Glasslip
+  filetype: png
 - name: Kakeru Okikura
   series: Glasslip
+  filetype: png
 - name: Hiro Shirosaki
   series: Glasslip
+  filetype: png
   
   # Golden Time
 - name: Banri Tada
   series: Golden Time
+  filetype: png
 - name: Mitsuo Yanagisawa
   series: Golden Time
+  filetype: png
 - name: Takaya "2D-kun" Satou
   series: Golden Time
+  filetype: png
   
   # Guilty Crown
 - name: Shu Ouma
   series: Guilty Crown
+  filetype: png
 - name: Gai Tsutsugami
   series: Guilty Crown
+  filetype: png
 - name: Daryl Yan
   series: Guilty Crown
+  filetype: png
 - name: Kenji Kido
   series: Guilty Crown
+  filetype: png
   
   # Hamatora
 - name: Nice
   series: Hamatora
+  filetype: png
 - name: Murasaki
   series: Hamatora
+  filetype: png
 - name: Art
   series: Hamatora
+  filetype: png
 - name: Ratio
   series: Hamatora
+  filetype: png
 - name: Birthday
   series: Hamatora
+  filetype: png
   
   # Kimi ni Todoke
 - name: Shouta Kazehaya
   series: Kimi ni Todoke
+  filetype: png
 - name: Ryuu Sanada
   series: Kimi ni Todoke
+  filetype: png
 - name: Kento Miura
   series: Kimi ni Todoke
+  filetype: png
   
   # Kuroko no Basket
 - name: Taiga Kagami
   series: Kuroko no Basket
+  filetype: png
 - name: Tetsuya Kuroko
   series: Kuroko no Basket
+  filetype: png
 - name: Seijuro Akashi
   series: Kuroko no Basket
+  filetype: png
 - name: Daiki Aomine
   series: Kuroko no Basket
+  filetype: png
 - name: Shintarou Midorima
   series: Kuroko no Basket
+  filetype: png
 - name: Ryouta Kise
   series: Kuroko no Basket
+  filetype: png
 - name: Atsushi Murasakibara
   series: Kuroko no Basket
+  filetype: png
 - name: Shinji Koganei
   series: Kuroko no Basket
+  filetype: png
 - name: Teppei Kiyoshi
   series: Kuroko no Basket
+  filetype: png
 - name: Rinnosuke Mitobe
   series: Kuroko no Basket
+  filetype: png
 - name: Kazunari Takao
   series: Kuroko no Basket
+  filetype: png
 - name: Junpei Hyuuga
   series: Kuroko no Basket
+  filetype: png
 - name: Shoichi Imayoshi
   series: Kuroko no Basket
+  filetype: png
 - name: Shun Izuki
   series: Kuroko no Basket
+  filetype: png
 - name: Yukio Kasamatsu
   series: Kuroko no Basket
+  filetype: png
 - name: Ryuuhei Kasuga
   series: Kuroko no Basket
+  filetype: png
   
   # Mekakucity Actors
 - name: Shintaro Kisaragi
   series: Mekakucity Actors
+  filetype: png
 - name: Shuuya Kano
   series: Mekakucity Actors
+  filetype: png
 - name: Haruka Kokonose
   series: Mekakucity Actors
+  filetype: png
 - name: Hibiya Amamiya
   series: Mekakucity Actors
+  filetype: png
 - name: Kousuke Seto
   series: Mekakucity Actors
+  filetype: png
   
   # Nagi no Asukara
 - name: Hikari Sakishima
   series: Nagi no Asukara
+  filetype: png
 - name: Tsumugu Kihara
   series: Nagi no Asukara
+  filetype: png
 - name: Kaname Isaki
   series: Nagi no Asukara
+  filetype: png
 - name: Uroko
   series: Nagi no Asukara
+  filetype: png
   
   # Noragami
 - name: Yato
   series: Noragami
+  filetype: png
 - name: Yukine
   series: Noragami
+  filetype: png
 - name: Kazuma
   series: Noragami
+  filetype: png
   
   # Tokyo Ghoul
 - name: Ken Kaneki
   series: Tokyo Ghoul
+  filetype: png
 - name: Uta
   series: Tokyo Ghoul
+  filetype: png
   
   # Tonari no Kaibutsu-kun
 - name: Haru Yoshida
   series: Tonari no Kaibutsu-kun
+  filetype: png
 - name: Misuyoshi Misawa
   series: Tonari no Kaibutsu-kun
+  filetype: png
 - name: Souhei Sasahara
   series: Tonari no Kaibutsu-kun
+  filetype: png
 - name: Kenji Yamaguchi
   series: Tonari no Kaibutsu-kun
+  filetype: png
 - name: Yuuzan Yoshida
   series: Tonari no Kaibutsu-kun
+  filetype: png
   
   # Vampire Knight
 - name: Zero Kiryuu
   series: Vampire Knight
+  filetype: png
 - name: Kaname Kuran
   series: Vampire Knight
+  filetype: png
 - name: Hanabusa Aidou
   series: Vampire Knight
+  filetype: png
 - name: Ichiru Kiryuu
   series: Vampire Knight
+  filetype: png
 - name: Senri Shiki
   series: Vampire Knight
+  filetype: png
 - name: Akatsuki Kain
   series: Vampire Knight
+  filetype: png
 - name: Takuma Ichijou
   series: Vampire Knight
+  filetype: png
   
   # Sukitte Ii Na Yo
 - name: Yamato Kurosawa
   series: Sukitte Ii Na Yo
+  filetype: png
 - name: Kakeru Hayakawa
   series: Sukitte Ii Na Yo
+  filetype: png
 - name: Kai Takemura
   series: Sukitte Ii Na Yo
+  filetype: png
   
   # Hirunaka no Ryuusei
 - name: Daiki Mamura
   series: Hirunaka no Ryuusei
+  filetype: png
 - name: Satsuki Shishio
   series: Hirunaka no Ryuusei
+  filetype: png
 - name: Togyuu Minagawa
   series: Hirunaka no Ryuusei
+  filetype: png
   
   # Horimiya
 - name: Izumi Miyamura
   series: Horimiya
+  filetype: png
 - name: Tooru Ishikawa
   series: Horimiya
+  filetype: png
 - name: Kakeru Sengoku
   series: Horimiya
+  filetype: png
   
   # Last Game
 - name: Naoto Yanagi
   series: Last Game
+  filetype: png
 - name: Hotaru Souma
   series: Last Game
+  filetype: png
   
   # Orange
 - name: Kakeru Naruse
   series: Orange
+  filetype: png
 - name: Hiroto Suwa
   series: Orange
+  filetype: png
 - name: Saku Hagita
   series: Orange
+  filetype: png
   
   # Taiyou no Ie
 - name: Hiro Nakamura
   series: Taiyou no Ie
+  filetype: png
 - name: Daiki Nakamura
   series: Taiyou no Ie
+  filetype: png
 - name: Oda
   series: Taiyou no Ie
+  filetype: png
   
   # Yumemiru Taiyou
 - name: Taiga Fujiwara
   series: Yumemiru Taiyou
+  filetype: png
 - name: Zen Nakajou
   series: Yumemiru Taiyou
+  filetype: png
 - name: Asahi Tatsugae
   series: Yumemiru Taiyou
+  filetype: png
   
   # Monokuro Shounen Shoujo
 - name: Ukyou
   series: Monokuro Shounen Shoujo
+  filetype: png
 - name: Chigaya
   series: Monokuro Shounen Shoujo
+  filetype: png
 - name: Kion
   series: Monokuro Shounen Shoujo
+  filetype: png
   
   # Death Note
 - name: Light Yagami
   series: Death Note
+  filetype: png
 - name: L Lawliet
   series: Death Note
+  filetype: png
 - name: Nate "Near" River 
   series: Death Note
+  filetype: png
 - name: Mihael "Mello" Keehl
   series: Death Note
+  filetype: png
   
   # Brothers Conflict
 - name: Masaomi Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Ukyo Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Kaname Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Hikaru Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Tsubaki Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Azusa Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Natsume Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Louis Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Subaru Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Iori Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Yuusuke Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Futo Asahina
   series: Brothers Conflict
+  filetype: png
 - name: Wataru Asahina
   series: Brothers Conflict
+  filetype: png
   
   # Katawa Shoujo
 - name: Kenji Setou
   series: Katawa Shoujo
+  filetype: png

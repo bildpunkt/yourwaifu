@@ -1,39 +1,51 @@
   # No Game No Life
 - name: Shiro
   series: No Game No Life
+  filetype: png
   
   # Oregairu
 - name: Homachi Hikigaya
   series: Oregairu
+  filetype: png
   
   # Toaru Kagaku no Railgun
 - name: Last Order
   series: Toaru Kagaku no Railgun
+  filetype: png
 - name: Kuroko Shirai
   series: Toaru Kagaku no Railgun
+  filetype: png
   
   # Date A Live
 - name: Kotori Itsuka
   series: Date A Live
+  filetype: png
   
   # Monogatari Series
 - name: Tsukihi Araragi
   series: Monogatari Series
+  filetype: png
 - name: Karen Araragi
   series: Monogatari Series
+  filetype: png
   
   # OreImo
 - name: Kirino Kousaka
   series: OreImo
+  filetype: png
   
   # Haganai
 - name: Maria Takayama
   series: Haganai
+  filetype: png
 - name: Kobato Hasegawa
   series: Haganai
+  filetype: png
   
   # Mikakunin de Shinkoukei
 - name: Mashiro Mitsumine
   series: Mikakunin de Shinkoukei
+  filetype: png
 - name: Yonomori Kobeni
   series: Mikakunin de Shinkoukei
+  filetype: png
