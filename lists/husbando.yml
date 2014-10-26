@@ -157,24 +157,26 @@
   series: Sakurasou no Pet na Kanojo
   
   # Shingeki no Kyojin
-- name: Mikasa Ackerman
+- name: Eren Yeager
+  series: Shingeki no Kyojin
+- name: Levi Ackerman
   series: Shingeki no Kyojin
   
   # Steins;Gate
 - name: Okabe Rintarou
   series: Steins;Gate
-- name: Rukako Urushibara
+- name: Ruka Urushibara
   series: Steins;Gate
   
   # Tengen Toppa Gurren Lagann
 - name: Kamina
-  series: Tengen Toppa
+  series: Tengen Toppa Gurren Lagann
 - name: Simon
-  series: Tengen Toppa
+  series: Tengen Toppa Gurren Lagann
 - name: Boota
-  series: Tengen Toppa
+  series: Tengen Toppa Gurren Lagann
 - name: Viral
-  series: Tengen Toppa
+  series: Tengen Toppa Gurren Lagann
   
   # The Idolm@ster
 - name: Producer
@@ -485,3 +487,7 @@
   series: Brothers Conflict
 - name: Wataru Asahina
   series: Brothers Conflict
+  
+  # Katawa Shoujo
+- name: Kenji Setou
+  series: Katawa Shoujo
