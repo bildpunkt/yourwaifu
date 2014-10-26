@@ -54,7 +54,7 @@ puts "husbando entries: \033[34;1m#{husbando.count}\033[0m"
 puts "filtering with \033[32;1m#{FILTER_WORDS.count}\033[0m entries"
 puts "filtering \033[36;1m#{FILTER_USERS.count}\033[0m users"
 if keys['tumblr']['enabled']
-  puts "\033[33;1mposting to Tumblr if status limit occurs\033[0m"
+  puts "\033[32;1mposting to Tumblr if status limit occurs\033[0m"
 end
 puts "-------------------------------"
 
@@ -112,7 +112,7 @@ loop do
             chosen_one = waifu.sample
             chosen_one['title'] = "waifu"
         end
-        puts "[#{Time.new.to_s}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
+        puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
         if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.png", __FILE__)
           client.update_with_media "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.png"), in_reply_to_status:object
         else
@@ -127,9 +127,9 @@ loop do
         end
       rescue NotImportantException => e
       rescue FilteredTweetException => e
-        puts "\033[32;1m[#{Time.new.to_s}] #{e.message}\033[0m"
+        puts "\033[33;1m[#{Time.new.to_s}] #{e.message}\033[0m"
       rescue FilteredUserException => e
-        puts "\033[36;1m[#{Time.new.to_s}] #{e.message}\033[0m"
+        puts "\033[33;1m[#{Time.new.to_s}] #{e.message}\033[0m"
       rescue Exception => e
         puts "\033[31;1m[#{Time.new.to_s}] #{e.message}\033[0m"
         if e.message.match /update limit/i and !limited
