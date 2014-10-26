@@ -1,1 +1,39 @@
- 
+  # No Game No Life
+- name: Shiro
+  series: No Game No Life
+  
+  # Oregairu
+- name: Homachi Hikigaya
+  series: Oregairu
+  
+  # Toaru Kagaku no Railgun
+- name: Last Order
+  series: Toaru Kagaku no Railgun
+- name: Kuroko Shirai
+  series: Toaru Kagaku no Railgun
+  
+  # Date A Live
+- name: Kotori Itsuka
+  series: Date A Live
+  
+  # Monogatari Series
+- name: Tsukihi Araragi
+  series: Monogatari Series
+- name: Karen Araragi
+  series: Monogatari Series
+  
+  # OreImo
+- name: Kirino Kousaka
+  series: OreImo
+  
+  # Haganai
+- name: Maria Takayama
+  series: Haganai
+- name: Kobato Hasegawa
+  series: Haganai
+  
+  # Mikakunin de Shinkoukei
+- name: Mashiro Mitsumine
+  series: Mikakunin de Shinkoukei
+- name: Yonomori Kobeni
+  series: Mikakunin de Shinkoukei
