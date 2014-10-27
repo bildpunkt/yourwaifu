@@ -4,7 +4,7 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
-version = "v2.0.2"
+version = "v2.0.3"
 keys = YAML.load_file File.expand_path(".", "config.yml")
 FILTER_WORDS = YAML.load_file File.expand_path(".", "filters/words.yml")
 FILTER_USERS = YAML.load_file File.expand_path(".", "filters/users.yml")
