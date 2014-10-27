@@ -5,13 +5,20 @@ require "tumblr_client"
 require "ostruct"
 
 version = "v2.0.3"
+
+# loading the config file
 keys = YAML.load_file File.expand_path(".", "config.yml")
+
+# loading the filter lists
 FILTER_WORDS = YAML.load_file File.expand_path(".", "filters/words.yml")
 FILTER_USERS = YAML.load_file File.expand_path(".", "filters/users.yml")
+
+# loading the lists containing characters
 waifu = YAML.load_file File.expand_path(".", "lists/waifu.yml")
 husbando = YAML.load_file File.expand_path(".", "lists/husbando.yml")
 imouto = YAML.load_file File.expand_path(".", "lists/imouto.yml")
 
+# Twitter client configuration
 client = Twitter::REST::Client.new do |config|
   config.consumer_key = keys['twitter']['consumer_key']
   config.consumer_secret = keys['twitter']['consumer_secret']
@@ -26,6 +33,7 @@ streamer = Twitter::Streaming::Client.new do |config|
   config.access_token_secret = keys['twitter']['access_token_secret']
 end
 
+# OPTIONAL: Tumblr configuration
 if keys['tumblr']['enabled']
   Tumblr.configure do |config|
     config.consumer_key = keys['tumblr']['consumer_key']
