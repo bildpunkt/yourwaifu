@@ -12,11 +12,15 @@ keys = YAML.load_file File.expand_path(".", "config.yml")
 # loading the filter lists
 FILTER_WORDS = YAML.load_file File.expand_path(".", "filters/words.yml")
 FILTER_USERS = YAML.load_file File.expand_path(".", "filters/users.yml")
+FILTER_CLIENTS = YAML.load_file File.expand_path(".", "filters/clients.yml")
 
 # loading the lists containing characters
 waifu = YAML.load_file File.expand_path(".", "lists/waifu.yml")
 husbando = YAML.load_file File.expand_path(".", "lists/husbando.yml")
 imouto = YAML.load_file File.expand_path(".", "lists/imouto.yml")
+
+# regex to get client name
+SOURCE_REGEX = /^<a href=\"(https?:\/\/\S+|erased_\d+)\" rel=\"nofollow\">(.+)<\/a>$/
 
 # Twitter client configuration
 client = Twitter::REST::Client.new do |config|
@@ -77,6 +81,9 @@ end
 class FilteredException < Exception
 end
 
+class FilteredClientException < FilteredException
+end
+
 class FilteredUserException < FilteredException
 end
 
@@ -90,6 +97,14 @@ class Twitter::Tweet
 
   def raise_if_retweet!
     raise NotImportantException if self.text.start_with? "RT @"
+  end
+  
+  def raise_if_client_filtered!
+    FILTER_CLIENTS.each do |fc|
+    filter_client = self.source.match SOURCE_REGEX
+    if filter_client[2].downcase.include? fc.downcase
+      raise FilteredClientException, "#{self.user.screen_name} is replying with #{fc}, a filtered client"
+    end
   end
 
   def raise_if_word_filtered!
@@ -115,6 +130,7 @@ loop do
       begin
         object.raise_if_current_user!
         object.raise_if_retweet!
+        object.raise_if_client_filtered!
         object.raise_if_word_filtered!
         object.raise_if_user_filtered!
         case object.text
@@ -142,6 +158,8 @@ loop do
           end
         end
       rescue NotImportantException => e
+      rescue FilteredClientException => e
+        puts "\033[33;1m[#{Time.new.to_s}] #{e.message}\033[0m"
       rescue FilteredTweetException => e
         puts "\033[33;1m[#{Time.new.to_s}] #{e.message}\033[0m"
       rescue FilteredUserException => e
