@@ -49,3 +49,58 @@
 - name: Yonomori Kobeni
   series: Mikakunin de Shinkoukei
   filetype: png
+  
+  # Akame ga Kill
+- name: Kurome
+  series: Akame ga Kill
+  filetype: png
+  
+  # Chuunibyou
+- name: Rikka Takanashi
+  series: Chuunibyou
+  filetype: png
+- name: Kuzuha Togashi
+  series: Chuunibyou
+  filetype: png
+  
+  # Free!
+- name: Gou Matsuoka
+  series: Free!
+  filetype: png
+  
+  # Galilei Donna
+- name: Hozuki Ferrari
+  series: Galilei Donna
+  filetype: png
+  
+  # GJ-bu
+- name: Seira Amatsuka
+  series: GJ-bu
+  filetype: png
+- name: Geraldine Bernstein
+  series: GJ-bu
+  filetype: png
+- name: Kasumi Shinomiya
+  series: GJ-bu
+  filetype: png
+  
+  # Gosick
+- name: Victorique de Blois
+  series: Gosick
+  filetype: png
+  
+  # Love Live!
+- name: Arisa Ayase
+  series: Love Live!
+  filetype: png
+- name: Yukiho Kousaka
+  series: Love Live!
+  filetype: png
+  
+  # ImoCho
+- name: Mitsuki Kanzaki
+  series: ImoCho
+  filetype: png
+- name: Moa Torii
+  series: ImoCho
+  filetype: png
