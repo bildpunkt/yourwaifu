@@ -102,8 +102,9 @@ class Twitter::Tweet
   def raise_if_client_filtered!
     FILTER_CLIENTS.each do |fc|
     filter_client = self.source.match SOURCE_REGEX
-    if filter_client[2].downcase.include? fc.downcase
-      raise FilteredClientException, "#{self.user.screen_name} is replying with #{fc}, a filtered client"
+      if filter_client[2].downcase.include? fc.downcase
+        raise FilteredClientException, "#{self.user.screen_name} is replying with #{fc}, a filtered client"
+      end
     end
   end
 
