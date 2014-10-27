@@ -68,6 +68,7 @@ puts "         [\033[34;1m #{imouto.count}\033[0m] imouto"
 puts "-------------------------------"
 puts "Filters: [ \033[33;1m#{FILTER_WORDS.count}\033[0m] words"
 puts "         [  \033[33;1m#{FILTER_USERS.count}\033[0m] users"
+puts "         [  \033[33;1m#{FILTER_CLIENTS.count}\033[0m] clients"
 puts "-------------------------------"
 if keys['tumblr']['enabled']
   puts "\033[36;1mposting to Tumblr if status limit occurs\033[0m"
