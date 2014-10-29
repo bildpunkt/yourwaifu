@@ -1662,3 +1662,17 @@
 - name: Dio Brando
   series: JoJo's Bizarre Adventure
   filetype: png
+
+# Tamako Market
+- name: Tamako Kitashirakawa
+  series: Tamako Market
+  filetype: png
+- name: Midori Tokiwa
+  series: Tamako Market
+  filetype: png
+- name: Kanna Makino
+  series: Tamako Market
+  filetype: png
+- name: Shiori Asagiri
+  series: Tamako Market
+  filetype: png
