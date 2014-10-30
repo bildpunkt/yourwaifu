@@ -225,6 +225,9 @@
 - name: Rei Ayanami
   series: Evangelion
   filetype: png
+- name: Mari Illustrious Makinami
+  series: Evangelion
+  filetype: png  
   
   # No Game No Life
 - name: Shiro
@@ -1684,4 +1687,45 @@
   filetype: png
 - name: Shiori Asagiri
   series: Tamako Market
+  filetype: png
+
+# Guilty Crown
+- name: Inori Yuzuriha
+  series: Guilty Crown
+  filetype: png
+- name: Mana Ouma
+  series: Guilty Crown
+  filetype: png
+  
+# Gurren Lagann
+- name: Yoko Littner
+  series: Gurren Lagann
+  filetype: png
+- name: Nia Teppelin
+  series: Gurren Lagann
+  filetype: png
+  
+# Naruto
+- name: Ino Yamanaka
+  series: Naruto
+  filetype: png
+- name: Hinata Hyuga
+  series: Naruto
+  filetype: png
+- name: Sakura Haruno
+  series: Naruto
+  filetype: png
+- name: Temari
+  series: Naruto
+  filetype: png
+  
+# Fairy Tail
+- name: Meredy Milkovich
+  series: Fairy Tail
+  filetype: png
+- name: Lucy Heartfilia
+  series: Fairy Tail
+  filetype: png
+- name: Wendy Marvell
+  series: Fairy Tail
   filetype: png
