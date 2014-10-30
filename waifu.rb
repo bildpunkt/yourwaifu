@@ -148,7 +148,7 @@ loop do
             chosen_one = shipgirl.sample
             chosen_one['title'] = "shipgirl"
           when /touhou?/i
-            chosen_one = shipgirl.sample
+            chosen_one = touhou.sample
             chosen_one['title'] = "touhou"
           else
             chosen_one = waifu.sample
