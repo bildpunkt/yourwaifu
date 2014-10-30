@@ -4,7 +4,7 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
-version = "v2.0.6"
+version = "v2.0.7"
 
 # loading the config file
 keys = YAML.load_file File.expand_path(".", "config.yml")
@@ -18,6 +18,8 @@ FILTER_CLIENTS = YAML.load_file File.expand_path(".", "filters/clients.yml")
 waifu = YAML.load_file File.expand_path(".", "lists/waifu.yml")
 husbando = YAML.load_file File.expand_path(".", "lists/husbando.yml")
 imouto = YAML.load_file File.expand_path(".", "lists/imouto.yml")
+shipgirl = YAML.load_file File.expand_path(".", "lists/kancolle.yml")
+touhou = YAML.load_file File.expand_path(".", "lists/touhou.yml")
 
 # regex to get client name
 SOURCE_REGEX = /^<a href=\"(https?:\/\/\S+|erased_\d+)\" rel=\"nofollow\">(.+)<\/a>$/
@@ -142,6 +144,12 @@ loop do
           when /imouto?/i
             chosen_one = imouto.sample
             chosen_one['title'] = "imouto"
+          when /shipgirl?/i
+            chosen_one = shipgirl.sample
+            chosen_one['title'] = "shipgirl"
+          when /touhou?/i
+            chosen_one = shipgirl.sample
+            chosen_one['title'] = "touhou"
           else
             chosen_one = waifu.sample
             chosen_one['title'] = "waifu"

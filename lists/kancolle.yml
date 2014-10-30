@@ -1,0 +1,421 @@
+# Kantai Collection
+- name: Shimakaze
+  series: Kantai Collection
+  filetype: png
+- name: Fubuki
+  series: Kantai Collection
+  filetype: png
+- name: Shirayuki
+  series: Kantai Collection
+  filetype: png
+- name: Hatsuyuki
+  series: Kantai Collection
+  filetype: png
+- name: Miyuki
+  series: Kantai Collection
+  filetype: png
+- name: Murakumo
+  series: Kantai Collection
+  filetype: png
+- name: Isonami
+  series: Kantai Collection
+  filetype: png
+- name: Ayanami
+  series: Kantai Collection
+  filetype: png
+- name: Shikinami
+  series: Kantai Collection
+  filetype: png
+- name: Oboro
+  series: Kantai Collection
+  filetype: png
+- name: Akebono
+  series: Kantai Collection
+  filetype: png
+- name: Sazaname
+  series: Kantai Collection
+  filetype: png
+- name: Ushio
+  series: Kantai Collection
+  filetype: png
+- name: Mutsuki
+  series: Kantai Collection
+  filetype: png
+- name: Kisaragi
+  series: Kantai Collection
+  filetype: png
+- name: Satsuki
+  series: Kantai Collection
+  filetype: png
+- name: Fumizuki
+  series: Kantai Collection
+  filetype: png
+- name: Nagatsuki
+  series: Kantai Collection
+  filetype: png
+- name: Kikuzuki
+  series: Kantai Collection
+  filetype: png
+- name: Mikazuki
+  series: Kantai Collection
+  filetype: png
+- name: Mochizuki
+  series: Kantai Collection
+  filetype: png
+- name: Akatsuki
+  series: Kantai Collection
+  filetype: png
+- name: Hibiki
+  series: Kantai Collection
+  filetype: png
+- name: Ikazuchi
+  series: Kantai Collection
+  filetype: png
+- name: Inazuma
+  series: Kantai Collection
+  filetype: png
+- name: Hatsuharu
+  series: Kantai Collection
+  filetype: png
+- name: Nenohi
+  series: Kantai Collection
+  filetype: png
+- name: Wakaba
+  series: Kantai Collection
+  filetype: png
+- name: Hatsushimo
+  series: Kantai Collection
+  filetype: png
+- name: Shiratsuyu
+  series: Kantai Collection
+  filetype: png
+- name: Shigure
+  series: Kantai Collection
+  filetype: png
+- name: Murasame
+  series: Kantai Collection
+  filetype: png
+- name: Yuudachi
+  series: Kantai Collection
+  filetype: png
+- name: Samidare
+  series: Kantai Collection
+  filetype: png
+- name: Suzukaze
+  series: Kantai Collection
+  filetype: png
+- name: Asashio
+  series: Kantai Collection
+  filetype: png
+- name: Ooshio
+  series: Kantai Collection
+  filetype: png
+- name: Michishio
+  series: Kantai Collection
+  filetype: png
+- name: Arashio
+  series: Kantai Collection
+  filetype: png
+- name: Arare
+  series: Kantai Collection
+  filetype: png
+- name: Kasumi
+  series: Kantai Collection
+  filetype: png
+- name: Kagerou
+  series: Kantai Collection
+  filetype: png
+- name: Shiranui
+  series: Kantai Collection
+  filetype: png
+- name: Kuroshio
+  series: Kantai Collection
+  filetype: png
+- name: Yukikaze
+  series: Kantai Collection
+  filetype: png
+- name: Hatsukaze
+  series: Kantai Collection
+  filetype: png
+- name: Maikaze
+  series: Kantai Collection
+  filetype: png
+- name: Akigumo
+  series: Kantai Collection
+  filetype: png
+- name: Yuugumo
+  series: Kantai Collection
+  filetype: png
+- name: Makigumo
+  series: Kantai Collection
+  filetype: png
+- name: Naganami
+  series: Kantai Collection
+  filetype: png
+- name: Yayoi
+  series: Kantai Collection
+  filetype: png
+- name: Uzuki
+  series: Kantai Collection
+  filetype: png
+- name: Isokaze
+  series: Kantai Collection
+  filetype: png
+- name: Urakaze
+  series: Kantai Collection
+  filetype: png
+- name: Tanikaze
+  series: Kantai Collection
+  filetype: png
+- name: Hamakaze
+  series: Kantai Collection
+  filetype: png
+- name: Amatsukaze
+  series: Kantai Collection
+  filetype: png
+- name: Tokitsukaze
+  series: Kantai Collection
+  filetype: png
+- name: Z1
+  series: Kantai Collection
+  filetype: png
+- name: Z3
+  series: Kantai Collection
+  filetype: png
+- name: Harusame
+  series: Kantai Collection
+  filetype: png
+- name: Hayashimo
+  series: Kantai Collection
+  filetype: png
+- name: Kiyoshimo
+  series: Kantai Collection
+  filetype: png
+- name: Tenryuu
+  series: Kantai Collection
+  filetype: png
+- name: Tatsuta
+  series: Kantai Collection
+  filetype: png
+- name: Kuma
+  series: Kantai Collection
+  filetype: png
+- name: Tama
+  series: Kantai Collection
+  filetype: png
+- name: Kiso
+  series: Kantai Collection
+  filetype: png
+- name: Nagara
+  series: Kantai Collection
+  filetype: png
+- name: Isuzu
+  series: Kantai Collection
+  filetype: png
+- name: Natori
+  series: Kantai Collection
+  filetype: png
+- name: Yura
+  series: Kantai Collection
+  filetype: png
+- name: Kinu
+  series: Kantai Collection
+  filetype: png
+- name: Abukuma
+  series: Kantai Collection
+  filetype: png
+- name: Sendai
+  series: Kantai Collection
+  filetype: png
+- name: Jintsuu
+  series: Kantai Collection
+  filetype: png
+- name: Naka
+  series: Kantai Collection
+  filetype: png
+- name: Ooi
+  series: Kantai Collection
+  filetype: png
+- name: Kitakami
+  series: Kantai Collection
+  filetype: png
+- name: Yuubari
+  series: Kantai Collection
+  filetype: png
+- name: Agano
+  series: Kantai Collection
+  filetype: png
+- name: Noshiro
+  series: Kantai Collection
+  filetype: png
+- name: Yahagi
+  series: Kantai Collection
+  filetype: png
+- name: Sakawa
+  series: Kantai Collection
+  filetype: png
+- name: Ooyodo
+  series: Kantai Collection
+  filetype: png
+- name: Furutaka
+  series: Kantai Collection
+  filetype: png
+- name: Kako
+  series: Kantai Collection
+  filetype: png
+- name: Aoba
+  series: Kantai Collection
+  filetype: png
+- name: Kinugasa
+  series: Kantai Collection
+  filetype: png
+- name: Myoukou
+  series: Kantai Collection
+  filetype: png
+- name: Nachi
+  series: Kantai Collection
+  filetype: png
+- name: Ashigara
+  series: Kantai Collection
+  filetype: png
+- name: Haguro
+  series: Kantai Collection
+  filetype: png
+- name: Takao
+  series: Kantai Collection
+  filetype: png
+- name: Atago
+  series: Kantai Collection
+  filetype: png
+- name: Maya
+  series: Kantai Collection
+  filetype: png
+- name: Choukai
+  series: Kantai Collection
+  filetype: png
+- name: Tone
+  series: Kantai Collection
+  filetype: png
+- name: Chikuma
+  series: Kantai Collection
+  filetype: png
+- name: Mogami
+  series: Kantai Collection
+  filetype: png
+- name: Mikuma
+  series: Kantai Collection
+  filetype: png
+- name: Suzuya
+  series: Kantai Collection
+  filetype: png
+- name: Kumano
+  series: Kantai Collection
+  filetype: png
+- name: Nagato
+  series: Kantai Collection
+  filetype: png
+- name: Mutsu
+  series: Kantai Collection
+  filetype: png
+- name: Kongou
+  series: Kantai Collection
+  filetype: png
+- name: Hiei
+  series: Kantai Collection
+  filetype: png
+- name: Haruna
+  series: Kantai Collection
+  filetype: png
+- name: Kirishima
+  series: Kantai Collection
+  filetype: png
+- name: Fusou
+  series: Kantai Collection
+  filetype: png
+- name: Yamashiro
+  series: Kantai Collection
+  filetype: png
+- name: Ise
+  series: Kantai Collection
+  filetype: png
+- name: Hyuuga
+  series: Kantai Collection
+  filetype: png
+- name: Yamato
+  series: Kantai Collection
+  filetype: png
+- name: Musashi
+  series: Kantai Collection
+  filetype: png
+- name: Bismarck
+  series: Kantai Collection
+  filetype: png
+- name: Houshou
+  series: Kantai Collection
+  filetype: png
+- name: Ryuujou
+  series: Kantai Collection
+  filetype: png
+- name: Hiyou
+  series: Kantai Collection
+  filetype: png
+- name: Jun'you
+  series: Kantai Collection
+  filetype: png
+- name: Shouhou
+  series: Kantai Collection
+  filetype: png
+- name: Zuihou
+  series: Kantai Collection
+  filetype: png
+- name: Chitose
+  series: Kantai Collection
+  filetype: png
+- name: Chiyoda
+  series: Kantai Collection
+  filetype: png
+- name: Ryuuhou
+  series: Kantai Collection
+  filetype: png
+- name: Akagi
+  series: Kantai Collection
+  filetype: png
+- name: Kaga
+  series: Kantai Collection
+  filetype: png
+- name: Souryuu
+  series: Kantai Collection
+  filetype: png
+- name: Hiryuu
+  series: Kantai Collection
+  filetype: png
+- name: Shoukaku
+  series: Kantai Collection
+  filetype: png
+- name: Zuikaku
+  series: Kantai Collection
+  filetype: png
+- name: Taihou
+  series: Kantai Collection
+  filetype: png
+- name: Unryuu
+  series: Kantai Collection
+  filetype: png
+- name: I-8
+  series: Kantai Collection
+  filetype: png
+- name: I-19
+  series: Kantai Collection
+  filetype: png
+- name: I-168
+  series: Kantai Collection
+  filetype: png
+- name: I-58
+  series: Kantai Collection
+  filetype: png
+- name: I-401
+  series: Kantai Collection
+  filetype: png
+- name: Maruyu
+  series: Kantai Collection
+  filetype: png 
