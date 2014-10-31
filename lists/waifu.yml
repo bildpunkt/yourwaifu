@@ -1260,3 +1260,14 @@
 - name: Sazanka Bianca
   series: Aquarion EVOL
   filetype: png
+  
+# Shiki
+- name: Ikumi Itou
+  series: Shiki
+  filetype: png
+- name: Kiyomi Nagata
+  series: Shiki
+  filetype: png
+- name: Yasuyo Hashiguchi
+  series: Shiki
+  filetype: png
