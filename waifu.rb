@@ -143,13 +143,13 @@ loop do
           when /husbando?/i
             chosen_one = husbando.sample
             chosen_one['title'] = "husbando"
-          when /imouto?/i
+          when /imouto/i
             chosen_one = imouto.sample
             chosen_one['title'] = "imouto"
-          when /shipgirl?/i
+          when /shipgirl/i
             chosen_one = shipgirl.sample
             chosen_one['title'] = "shipgirl"
-          when /touhou?/i
+          when /touhou/i
             chosen_one = touhou.sample
             chosen_one['title'] = "touhou"
           else
