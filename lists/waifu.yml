@@ -1271,3 +1271,11 @@
 - name: Yasuyo Hashiguchi
   series: Shiki
   filetype: png
+  
+# Izuna: Unemployed Ninja
+- name: Ichika
+  series: ! 'Izuna: Unemployed Ninja'
+  filetype: png
+- name: Shino
+  series: ! 'Izuna: Unemployed Ninja'
+  filetype: png
