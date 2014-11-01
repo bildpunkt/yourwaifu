@@ -156,29 +156,35 @@
   series: Corpse Party
   filetype: png
 
-  # Fullmetal Alchemist
-- name: Roy Mustang
-  series: Fullmetal Alchemist
-  filetype: png
+# Fullmetal Alchemist
 - name: Edward Elric
   series: Fullmetal Alchemist
   filetype: png
 - name: Alphonse Elric
   series: Fullmetal Alchemist
   filetype: png
-- name: Greed
+- name: Roy Mustang
   series: Fullmetal Alchemist
   filetype: png
-- name: Alex Louis Armstrong
-  series: Fullmetal Alchemist
-  filetype: png
-- name: Van Hohenheim
+- name: Jean Havoc
   series: Fullmetal Alchemist
   filetype: png
 - name: Maes Hughes
   series: Fullmetal Alchemist
   filetype: png
 - name: Ling Yao
+  series: Fullmetal Alchemist
+  filetype: png
+- name: Russell Tringham
+  series: Fullmetal Alchemist
+  filetype: png
+- name: Alfons Heiderich
+  series: Fullmetal Alchemist
+  filetype: png
+- name: Envy
+  series: Fullmetal Alchemist
+  filetype: png
+- name: Greed
   series: Fullmetal Alchemist
   filetype: png
   
