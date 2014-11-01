@@ -4,7 +4,7 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
-version = "v2.1.0"
+version = "v2.2.0"
 
 # loading the config file
 keys = YAML.load_file File.expand_path(".", "config.yml")
@@ -38,6 +38,16 @@ streamer = Twitter::Streaming::Client.new do |config|
   config.consumer_secret = keys['twitter']['consumer_secret']
   config.access_token = keys['twitter']['access_token']
   config.access_token_secret = keys['twitter']['access_token_secret']
+end
+
+# OPTIONAL: Second Twitter configuration (status account)
+if keys['statustwitter']['enabled']
+  status = Twitter::REST::Client.new do |config|
+    config.consumer_key = keys['statustwitter']['consumer_key']
+    config.consumer_secret = keys['statustwitter']['consumer_secret']
+    config.access_token = keys['statustwitter']['access_token']
+    config.access_token_secret = keys['statustwitter']['access_token_secret']
+  end
 end
 
 # OPTIONAL: Tumblr configuration
@@ -78,6 +88,10 @@ puts "         [  \033[33;1m#{FILTER_CLIENTS.count}\033[0m] clients"
 puts "-------------------------------"
 if keys['tumblr']['enabled']
   puts "\033[36;1mposting to Tumblr if status limit occurs\033[0m"
+  puts "-------------------------------"
+end
+if keys['statustwitter']['enabled']
+  puts "\033[36;1mposting to Twitter if status limit occurs\033[0m"
   puts "-------------------------------"
 end
 
@@ -173,6 +187,9 @@ loop do
           if keys['tumblr']['enabled']
             tumblr_client.text(keys['tumblr']['blog_name'], title: "I'm back!", body: "The limit is gone now and you can get waifus/husbandos again! [Bot has been unlimited since: #{Time.new.to_s}]")
           end
+          if keys['statustwitter']['enabled']
+            status.update "You can get waifus/husbandos again!"
+          end
         end
       rescue NotImportantException => e
       rescue FilteredClientException => e
@@ -187,6 +204,9 @@ loop do
           limited = true
           if keys['tumblr']['enabled']
             tumblr_client.text(keys['tumblr']['blog_name'], title: "Bot is limited", body: "I've reached the \"daily\" limit for now! Please wait a bit before mentioning me again. [Bot has been limited since: #{Time.new.to_s}]")
+          end
+          if keys['statustwitter']['enabled']
+            status.update "\"Daily\" limit reached, please wait a bit before mentioning again!"
           end
         end
       end
