@@ -1777,3 +1777,14 @@
 - name: Chiaki Minami
   series: Minami-ke
   filetype: png
+  
+# Lupin III
+- name: Fujiko Mine
+  series: Lupin III
+  filetype: png
+
+# Neon Genesis Evangelion
+- name: Misato Katsuragi
+  series: Neon Genesis Evangelion
+  filetype: png
+  

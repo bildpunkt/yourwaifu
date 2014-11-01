@@ -936,3 +936,28 @@
 - name: Mytho
   series: Princess Tutu
   filetype: png
+  
+# Neon Genesis Evangelion
+- name: Ryoji Kaji
+  series: Neon Genesis Evangelion
+  filetype: png
+  
+# Mushi-shi
+- name: Ginko
+  series: Mushi-shi
+  filetype: png
+  
+# Kyo Kara Maoh
+- name: Conrad Weller
+  series: Kyo Kara Maoh
+  filetype: png
+  
+# Digimon Tamers
+- name: Mitsuo Yamaki
+  series: Digimon Tamers
+  filetype: png
+  
+# Paradise Kiss
+- name: George Koizumi
+  series: Paradise Kiss
+  filetype: png
