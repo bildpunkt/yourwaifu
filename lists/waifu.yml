@@ -542,7 +542,31 @@
   filetype: png
   
   # Sailor Moon
-- name: Makoto Kino
+- name: Usagi Tsukino/Sailor Moon
+  series: Sailor Moon
+  filetype: png
+- name: Ami Mizuno/Sailor Mercury
+  series: Sailor Moon
+  filetype: png
+- name: Rei Hino/Sailor Mars
+  series: Sailor Moon
+  filetype: png
+- name: Minako Aino/Sailor Venus
+  series: Sailor Moon
+  filetype: png
+- name: Makoto Kino/Sailor Jupiter
+  series: Sailor Moon
+  filetype: png
+- name: Haruka Tenoh/Sailor Uranus
+  series: Sailor Moon
+  filetype: png
+- name: Michiru Kaioh/Sailor Neptune
+  series: Sailor Moon
+  filetype: png
+- name: Setsuna Meioh/Sailor Pluto
+  series: Sailor Moon
+  filetype: png
+- name: Naru Osaka
   series: Sailor Moon
   filetype: png
   
