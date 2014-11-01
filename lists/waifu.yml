@@ -201,6 +201,17 @@
   series: Fate
   filetype: png
   
+# Fate/Zero
+- name: Irisviel von Einzbern
+  series: Fate/Zero
+  filetype: png
+- name: Saber/Arturia Pendragon
+  series: Fate/Zero
+  filetype: png
+- name: Maiya Hisau
+  series: Fate/Zero
+  filetype: png
+  
   # OreImo
 - name: Ayase Aragaki
   series: OreImo
