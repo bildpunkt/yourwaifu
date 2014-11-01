@@ -1766,3 +1766,14 @@
 - name: Rue/Princess Kraehe
   series: Princess Tutu
   filetype: png
+  
+# Minami-ke
+- name: Haruka Minami
+  series: Minami-ke
+  filetype: png
+- name: Kana Minami
+  series: Minami-ke
+  filetype: png
+- name: Chiaki Minami
+  series: Minami-ke
+  filetype: png
