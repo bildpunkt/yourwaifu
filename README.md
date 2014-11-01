@@ -24,7 +24,16 @@ A twitter bot that will respond to mentions with a randomly picked person, which
 * Generate your consumer/access token keys/secrets for Read and Write access
 * Add your consumer/access token keys/secrets to `config.yml.example` and rename it to `config.yml`
 
-#### Tumblr
+#### Status Accounts
+
+Optional accounts you can set up to inform your followers about status limit of the bot.
+
+##### Twitter
+
+* Repeat steps from above
+* In your `config.yml` in `statustwitter`, set `enabled` to true
+
+##### Tumblr
 
 If you want to post updates to Tumblr when the bot is limited, do the following:
 
@@ -37,6 +46,10 @@ After you added the keys, simply execute `ruby waifu.rb` and it should work!
 ## Contributing
 
 Missing your waifu? Here are some simply ways to get those you want onto the list:
+
+### Shizune, the request platform
+
+With the creation of shizune, the web request platform for yourwaifu ([repository](https://github.com/yourwaifu/shizune) | [live instance](http://shizune.pii.moe)) you can easily request entries for the bot!
 
 ### Open an issue on GitHub
 
