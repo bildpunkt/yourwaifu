@@ -4,7 +4,7 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
-version = "v2.0.10"
+version = "v2.0.11"
 
 # loading the config file
 keys = YAML.load_file File.expand_path(".", "config.yml")
