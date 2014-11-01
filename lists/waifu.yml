@@ -1809,3 +1809,74 @@
 - name: Bluebell
   series: Katekyo Hitman Reborn
   filetype: png
+  
+# Senran Kagura
+- name: Yumi
+  series: Senran Kagura
+  filetype: png
+- name: ! 'Asuka'
+  series: Senran Kagura
+  filetype: png
+- name: ! 'Ikaruga'
+  series: Senran Kagura
+  filetype: png
+- name: Katsuragi
+  series: Senran Kagura
+  filetype: png
+- name: Yagyuu
+  series: Senran Kagura
+  filetype: png
+- name: Hibari
+  series: Senran Kagura
+  filetype: png
+- name: Kiriya
+  series: Senran Kagura
+  filetype: png
+- name: Daidouji
+  series: Senran Kagura
+  filetype: png
+- name: Homura
+  series: Senran Kagura
+  filetype: png
+- name: ! 'Yomi'
+  series: Senran Kagura
+  filetype: png
+- name: Hikage
+  series: Senran Kagura
+  filetype: png
+- name: ! 'Mirai'
+  series: Senran Kagura
+  filetype: png
+- name: Haruka
+  series: Senran Kagura
+  filetype: png
+- name: Suzune
+  series: Senran Kagura
+  filetype: png
+- name: ! 'Murakumo'
+  series: Senran Kagura
+  filetype: png
+- name: ! 'Yozakura'
+  series: Senran Kagura
+  filetype: png
+- name: Shiki
+  series: Senran Kagura
+  filetype: png
+- name: Minori
+  series: Senran Kagura
+  filetype: png
+- name: ! 'Miyabi'
+  series: Senran Kagura
+  filetype: png
+- name: Murasaki
+  series: Senran Kagura
+  filetype: png
+- name: Imu
+  series: Senran Kagura
+  filetype: png
+- name: Ryoubi
+  series: Senran Kagura
+  filetype: png
+- name: Ryouna
+  series: Senran Kagura
+  filetype: png
