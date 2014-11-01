@@ -121,7 +121,16 @@
   filetype: png
 - name: ALYS
   series: Vocaloid
-  filetype: png 
+  filetype: png
+- name: Big Al
+  series: Vocaloid
+  filetype: png
+- name: YOHIOLOID
+  series: Vocaloid
+  filetype: png
+- name: LE
+  series: Vocaloid
+  filetype: png
 
 # UTAU
 - name: Tei Sukone
