@@ -1880,3 +1880,32 @@
 - name: Ryouna
   series: Senran Kagura
   filetype: png
+  
+# Hyperdimension Neptunia
+- name: Neptune/Purple Heart
+  series: Hyperdimension Neptunia
+  filetype: png
+- name: Noire/Black Heart
+  series: Hyperdimension Neptunia
+  filetype: png
+- name: Blanc/White Heart
+  series: Hyperdimension Neptunia
+  filetype: png
+- name: Vert/Green Heart
+  series: Hyperdimension Neptunia
+  filetype: png
+- name: Plutia/Iris Heart
+  series: Hyperdimension Neptunia
+  filetype: png
+- name: IF
+  series: Hyperdimension Neptunia
+  filetype: png
+- name: Compa
+  series: Hyperdimension Neptunia
+  filetype: png
+- name: Nepgear/Purple Sister
+  series: Hyperdimension Neptunia
+  filetype: png
+- name: Uni/Black Sister
+  series: Hyperdimension Neptunia
+  filetype: png
