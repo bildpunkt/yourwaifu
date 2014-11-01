@@ -1,103 +1,193 @@
-  # Touhou
-- name: Reimu Hakurei
+# Touhou
+- name: Alice Margatroid
   series: Touhou
   filetype: png
-- name: Marisa Kirisame
+- name: Aya Shameimaru
   series: Touhou
   filetype: png
-- name: Rumia
-  series: Touhou
-  filetype: png
-- name: Daiyousei
-  series: Touhou
-  filetype: png
-- name: Cirno
-  series: Touhou
-  filetype: png
-- name: Hong Meirin
-  series: Touhou
-  filetype: png
-- name: Koakuma
-  series: Touhou
-  filetype: png
-- name: Patchouli Knowledge
-  series: Touhou
-  filetype: png
-- name: Sakuya Izayoi
-  series: Touhou
-  filetype: png
-- name: Remilia Scarlet
-  series: Touhou
-  filetype: png
-- name: Flandre Scarlet
-  series: Touhou
-  filetype: png
-- name: Letty Whiterock
+- name: Byakuren Hijiri
   series: Touhou
   filetype: png
 - name: Chen
   series: Touhou
   filetype: png
-- name: Alice Margatroid
+- name: Chiyuri Kitashirakawa
   series: Touhou
   filetype: png
-- name: Youmu Konpaku
+- name: Cirno
   series: Touhou
   filetype: png
-- name: Yuyuko Saigyouji
+- name: Daiyousei
   series: Touhou
   filetype: png
-- name: Ran Yakumo
+- name: Eirin Yagokoro
   series: Touhou
   filetype: png
-- name: Yukari Yakumo
+- name: Flandre Scarlet
   series: Touhou
   filetype: png
-- name: Suika Ibuki
+- name: Fujiwara no Mokou
   series: Touhou
   filetype: png
-- name: Wriggle Nightbug
+- name: Hatate Himekaidou
   series: Touhou
   filetype: png
-- name: Mystia Lorelei
+- name: Hina Kagiyama
   series: Touhou
   filetype: png
-- name: Keine Kamishirasawa
+- name: Hong Meiling
   series: Touhou
   filetype: png
-- name: Tewi Inaba
+- name: Iku Nagae
   series: Touhou
   filetype: png
-- name: Reisen Udongein Inaba
-  series: Touhou
-  filetype: png
-- name: Nitori Kawashiro
-  series: Touhou
-  filetype: png
-- name: Sanae Kochiya
-  series: Touhou
-  filetype: png
-- name: Momizi Inubashiri
+- name: Kaguya Houraisan
   series: Touhou
   filetype: png
 - name: Kanako Yasaka
   series: Touhou
   filetype: png
-- name: Suwako Moriya
+- name: Kasen Ibara
   series: Touhou
   filetype: png
-- name: Tenshi Hinanai
+- name: Keine Kamishirasawa
   series: Touhou
   filetype: png
-- name: Satori Komeiji
+- name: Koakuma
+  series: Touhou
+  filetype: png
+- name: Kogasa Tatara
+  series: Touhou
+  filetype: png
+- name: Koishi Komeiji
+  series: Touhou
+  filetype: png
+- name: Komachi Onozuka
+  series: Touhou
+  filetype: png
+- name: Kyouko Kasodani
+  series: Touhou
+  filetype: png
+- name: Layla Prismriver
+  series: Touhou
+  filetype: png
+- name: Letty Whiterock
+  series: Touhou
+  filetype: png
+- name: Lunasa Prismriver
+  series: Touhou
+  filetype: png
+- name: Lyrica Prismriver
+  series: Touhou
+  filetype: png
+- name: Mamizou Futatsuiwa
+  series: Touhou
+  filetype: png
+- name: Marisa Kirisame
+  series: Touhou
+  filetype: png
+- name: Medicine Melancholy
+  series: Touhou
+  filetype: png
+- name: Merlin Prismriver
+  series: Touhou
+  filetype: png
+- name: Minamitsu Murasa
+  series: Touhou
+  filetype: png
+- name: Momiji Inubashiri
+  series: Touhou
+  filetype: png
+- name: Myouren Hijiri
+  series: Touhou
+  filetype: png
+- name: Mystia Lorelei
+  series: Touhou
+  filetype: png
+- name: Nazrin
+  series: Touhou
+  filetype: png
+- name: ! 'Nitori Kawashiro '
+  series: Touhou
+  filetype: png
+- name: Nue Houjuu
+  series: Touhou
+  filetype: png
+- name: Parsee Mizuhashi
+  series: Touhou
+  filetype: png
+- name: Patchouli Knowledge
+  series: Touhou
+  filetype: png
+- name: Ran Yakumo
+  series: Touhou
+  filetype: png
+- name: Reimu Hakurei
+  series: Touhou
+  filetype: png
+- name: Reisen Udongein Inaba
+  series: Touhou
+  filetype: png
+- name: Remilia Scarlet
+  series: Touhou
+  filetype: png
+- name: Renko Usami
   series: Touhou
   filetype: png
 - name: Rin Kaenbyou
   series: Touhou
   filetype: png
+- name: Rumia
+  series: Touhou
+  filetype: png
+- name: Sakuya Izayoi
+  series: Touhou
+  filetype: png
+- name: Sanae Kochiya
+  series: Touhou
+  filetype: png
+- name: Satori Komeiji
+  series: Touhou
+  filetype: png
+- name: Seiga Kaku
+  series: Touhou
+  filetype: png
+- name: Shikieiki Yamaxanadu
+  series: Touhou
+  filetype: png
+- name: Suika Ibuki
+  series: Touhou
+  filetype: png
+- name: Suwako Moriya
+  series: Touhou
+  filetype: png
+- name: Tenshi Hinanawi
+  series: Touhou
+  filetype: png
+- name: Tewi Inaba
+  series: Touhou
+  filetype: png
 - name: Utsuho Reiuji
   series: Touhou
   filetype: png
-- name: Koishi Komeiji
+- name: Wriggle Nightbug
   series: Touhou
-  filetype: png 
+  filetype: png
+- name: Yamame Kurodani
+  series: Touhou
+  filetype: png
+- name: Yoshika Miyako
+  series: Touhou
+  filetype: png
+- name: Youki Konpaku
+  series: Touhou
+  filetype: png
+- name: Youmu Konpaku
+  series: Touhou
+  filetype: png
+- name: Yukari Yakumo
+  series: Touhou
+  filetype: png
+- name: Yuyuko Saigyouji
+  series: Touhou
+  filetype: png
