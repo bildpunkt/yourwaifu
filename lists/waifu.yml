@@ -1493,3 +1493,26 @@
 - name: Yuno Gasai
   series: Mirai Nikki
   filetype: png
+  
+# Hidamari Sketch
+- name: Yuno
+  series: Hidamari Sketch
+  filetype: png
+- name: Miyako
+  series: Hidamari Sketch
+  filetype: png
+- name: Sae
+  series: Hidamari Sketch
+  filetype: png
+- name: Hiro
+  series: Hidamari Sketch
+  filetype: png
+- name: Nori
+  series: Hidamari Sketch
+  filetype: png
+- name: Nazuna
+  series: Hidamari Sketch
+  filetype: png
+- name: Natsume
+  series: Hidamari Sketch
+  filetype: png
