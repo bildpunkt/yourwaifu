@@ -747,3 +747,23 @@
 - name: Zen Fudou
   series: Aquarion EVOL
   filetype: png
+  
+# Bleach
+- name: Sōsuke Aizen
+  series: Bleach
+  filetype: png
+- name: Ichigo Kurosaki
+  series: Bleach
+  filetype: png
+- name: Ulquiorra Cifer
+  series: Bleach
+  filetype: png
+- name: Uryu Ishida
+  series: Bleach
+  filetype: png
+- name: Kisuke Urahara
+  series: Bleach
+  filetype: png
+- name: Joshiro Ukitake
+  series: Bleach
+  filetype: png
