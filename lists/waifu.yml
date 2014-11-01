@@ -1463,3 +1463,33 @@
 - name: Chloe Chronicle
   series: ! 'IS: Infinite Stratos'
   filetype: png
+  
+# Kino's Journey
+- name: Kino
+  series: Kino's Journey
+  filetype: png
+
+# Fruits Basket
+- name: Tohru Honda
+  series: Fruits Basket
+  filetype: png
+  
+# Ping Pong
+- name: Kong Wenge
+  series: Ping Pong
+  filetype: png
+  
+# Zankyou no Terror
+- name: Twelve
+  series: Zankyou no Terror
+  filetype: png
+  
+# Serial Experiments Lain
+- name: Lain
+  series: Serial Experiments Lain
+  filetype: png
+  
+# Mirai Nikki
+- name: Yuno Gasai
+  series: Mirai Nikki
+  filetype: png
