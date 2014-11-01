@@ -104,3 +104,11 @@
 - name: Moa Torii
   series: ImoCho
   filetype: png
+  
+# Umineko No Naku Koro Ni
+- name: Ange Ushiromiya
+  series: Umineko No Naku Koro Ni
+  filetype: png
+- name: Maria Ushiromiya
+  series: Umineko No Naku Koro Ni
+  filetype: png
