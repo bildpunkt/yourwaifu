@@ -1516,3 +1516,47 @@
 - name: Natsume
   series: Hidamari Sketch
   filetype: png
+  
+# Mai Hime or Otome
+- name: Mai Tokiha
+  series: Mai Hime or Otome
+  filetype: png
+- name: Shizuru Fujino
+  series: Mai Hime or Otome
+  filetype: png
+- name: Natsuki Kuga
+  series: Mai Hime or Otome
+  filetype: png
+- name: Nao Yuuki
+  series: Mai Hime or Otome
+  filetype: png
+- name: Miyu Greer
+  series: Mai Hime or Otome
+  filetype: png
+- name: Chie Harada
+  series: Mai Hime or Otome
+  filetype: png
+- name: Akane Higurashi
+  series: Mai Hime or Otome
+  filetype: png
+- name: Yukino Kikukawa
+  series: Mai Hime or Otome
+  filetype: png
+- name: Haruka Suzushiro
+  series: Mai Hime or Otome
+  filetype: png
+- name: Mikoto Minagi
+  series: Mai Hime or Otome
+  filetype: png
+- name: ! 'Akira Okuzaki '
+  series: Mai Hime or Otome
+  filetype: png
+- name: Fumi Himeno
+  series: Mai Hime or Otome
+  filetype: png
+- name: Mashiro Kazahana
+  series: Mai Hime or Otome
+  filetype: png
+- name: Midori Sugiura
+  series: Mai Hime or Otome
+  filetype: png
