@@ -996,3 +996,32 @@
 - name: Tatsumi
   series: Shiki
   filetype: png
+  
+# Gintama
+- name: Gintoki Sakata
+  series: Gintama
+  filetype: png
+- name: Toushiro Hijikata
+  series: Gintama
+  filetype: png
+- name: Sougo Okita
+  series: Gintama
+  filetype: png
+- name: Isao Kondo
+  series: Gintama
+  filetype: png
+- name: Kotaro Katsura
+  series: Gintama
+  filetype: png
+- name: Shinsuke Takasugi
+  series: Gintama
+  filetype: png
+- name: Shinpachi Shimura
+  series: Gintama
+  filetype: png
+- name: Taizo Hasegawa
+  series: Gintama
+  filetype: png
+- name: Bansai Kawakami
+  series: Gintama
+  filetype: png
