@@ -868,3 +868,17 @@
 - name: Caster
   series: Fate/Zero
   filetype: png
+  
+# Trigun
+- name: Vash the Stampede
+  series: Trigun
+  filetype: png
+- name: Nicholas D. Wolfwood
+  series: Trigun
+  filetype: png
+- name: Legato Bluesummers
+  series: Trigun
+  filetype: png
+- name: Millions Knives
+  series: Trigun
+  filetype: png
