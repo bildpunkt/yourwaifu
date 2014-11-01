@@ -985,3 +985,14 @@
 - name: Kunikida
   series: Suzumiya Haruhi no Yuuutsu
   filetype: png
+  
+# Shiki
+- name: Natsuno Yuuki
+  series: Shiki
+  filetype: png
+- name: Tomio Ookawa
+  series: Shiki
+  filetype: png
+- name: Tatsumi
+  series: Shiki
+  filetype: png
