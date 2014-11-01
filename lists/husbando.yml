@@ -882,3 +882,32 @@
 - name: Millions Knives
   series: Trigun
   filetype: png
+  
+# Ouran High School Host Club
+- name: Tamaki Suoh
+  series: Ouran High School Host Club
+  filetype: png
+- name: Kyoya Ootori
+  series: Ouran High School Host Club
+  filetype: png
+- name: Hikaru Hitachiin
+  series: Ouran High School Host Club
+  filetype: png
+- name: Kaoru Hitachiin
+  series: Ouran High School Host Club
+  filetype: png
+- name: Mitsukuni Haninozuka
+  series: Ouran High School Host Club
+  filetype: png
+- name: Takashi Morinozuka
+  series: Ouran High School Host Club
+  filetype: png
+- name: Umehito Nekozawa
+  series: Ouran High School Host Club
+  filetype: png
+- name: Ranka Fujioka
+  series: Ouran High School Host Club
+  filetype: png
+- name: Ritsu Kasanoda
+  series: Ouran High School Host Club
+  filetype: png

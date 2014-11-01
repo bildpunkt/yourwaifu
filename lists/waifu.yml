@@ -1730,3 +1730,11 @@
 - name: Meryl Stryfe
   series: Trigun
   filetype: png
+  
+# Ouran High School Host Club
+- name: Haruhi Fujioka
+  series: Ouran High School Host Club
+  filetype: png
+- name: Renge Houshakuji
+  series: Ouran High School Host Club
+  filetype: png
