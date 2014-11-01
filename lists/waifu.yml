@@ -1610,3 +1610,26 @@
 - name: Sayo
   series: Akame ga Kill
   filetype: png
+  
+# Attack on Titan
+- name: Mikasa Ackerman
+  series: Attack on Titan
+  filetype: png
+- name: Annie Leonhart
+  series: Attack on Titan
+  filetype: png
+- name: Krista Lenz/Historia Reiss
+  series: Attack on Titan
+  filetype: png
+- name: Ymir
+  series: Attack on Titan
+  filetype: png
+- name: Hange Zoe
+  series: Attack on Titan
+  filetype: png
+- name: Petra Ral
+  series: Attack on Titan
+  filetype: png
+- name: Sasha Braus
+  series: Attack on Titan
+  filetype: png
