@@ -4,7 +4,7 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
-version = "v2.2.1"
+version = "v2.2.2"
 
 # loading the config file
 keys = YAML.load_file File.expand_path(".", "config.yml")
@@ -188,7 +188,7 @@ loop do
             tumblr_client.text(keys['tumblr']['blog_name'], title: "I'm back!", body: "The limit is gone now and you can get waifus/husbandos again! [Bot has been unlimited since: #{Time.new.to_s}]")
           end
           if keys['statustwitter']['enabled']
-            status.update "You can get waifus/husbandos again!"
+            status.update "You can get waifus/husbandos again! [Bot has been unlimited since: #{Time.new.to_s}]"
           end
         end
       rescue NotImportantException => e
@@ -206,7 +206,7 @@ loop do
             tumblr_client.text(keys['tumblr']['blog_name'], title: "Bot is limited", body: "I've reached the \"daily\" limit for now! Please wait a bit before mentioning me again. [Bot has been limited since: #{Time.new.to_s}]")
           end
           if keys['statustwitter']['enabled']
-            status.update "\"Daily\" limit reached, please wait a bit before mentioning again!"
+            status.update "\"Daily\" limit reached, please wait a bit before mentioning again! [Bot has been limited since: #{Time.new.to_s}]"
           end
         end
       end
