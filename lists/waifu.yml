@@ -1722,6 +1722,12 @@
 - name: Kashima Yuu
   series: Monthly Girls' Nozaki-kun
   filetype: png
+- name: Sakura Chiyo
+  series: Monthly Girls' Nozaki-kun
+  filetype: png
+- name: Yuzuki Seo
+  series: Monthly Girls' Nozaki-kun
+  filetype: png
   
 # Trigun
 - name: Milly Thompson
@@ -1908,4 +1914,18 @@
   filetype: png
 - name: Uni/Black Sister
   series: Hyperdimension Neptunia
+  filetype: png
+  
+# Futsuu no Joshikousei ga [Locodol] Yatte Mita
+- name: Usami Nanako
+  series: Futsuu no Joshikousei ga [Locodol] Yatte Mita
+  filetype: png
+- name: Kohinata Yukari
+  series: Futsuu no Joshikousei ga [Locodol] Yatte Mita
+  filetype: png
+- name: Mikoze Yui
+  series: Futsuu no Joshikousei ga [Locodol] Yatte Mita
+  filetype: png
+- name: Nazukari Mirai
+  series: Futsuu no Joshikousei ga [Locodol] Yatte Mita
   filetype: png
