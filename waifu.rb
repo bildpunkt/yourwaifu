@@ -196,6 +196,7 @@ loop do
         puts "\033[33;1m[#{Time.new.to_s}] #{e.message}\033[0m"
       rescue FilteredTweetException => e
         puts "\033[33;1m[#{Time.new.to_s}] #{e.message}\033[0m"
+        client.update "@#{object.user.screen_name} http://foaas.herokuapp.com/field/your%20Waifu/#{object.user.screen_name}/Mai%20Waifu", in_reply_to_status:object
       rescue FilteredUserException => e
         puts "\033[33;1m[#{Time.new.to_s}] #{e.message}\033[0m"
       rescue Exception => e
