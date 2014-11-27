@@ -124,8 +124,8 @@ class Twitter::Tweet
     FILTER_CLIENTS.each do |fc|
     filter_client = self.source.match SOURCE_REGEX
       if filter_client[2].downcase.include? fc.downcase
-        raise FilteredClientException, "#{self.user.screen_name} is replying with #{fc}, a filtered client"
         client.update "@#{object.user.screen_name} http://foaas.herokuapp.com/field/your%20Waifu/#{object.user.screen_name}/Mai Waifu0", in_reply_to_status:object
+        raise FilteredClientException, "#{self.user.screen_name} is replying with #{fc}, a filtered client"
       end
     end
   end
@@ -133,8 +133,8 @@ class Twitter::Tweet
   def raise_if_word_filtered!
     FILTER_WORDS.each do |fw|
       if self.text.downcase.include? fw.downcase
-        raise FilteredTweetException, "#{self.user.screen_name} triggered filter: '#{fw}'"
         client.update "@#{object.user.screen_name} http://foaas.herokuapp.com/field/your%20Waifu/#{object.user.screen_name}/Mai Waifu0", in_reply_to_status:object
+        raise FilteredTweetException, "#{self.user.screen_name} triggered filter: '#{fw}'"
       end
     end
   end
@@ -142,8 +142,8 @@ class Twitter::Tweet
   def raise_if_user_filtered!
     FILTER_USERS.each do |fu|
       if self.user.screen_name.downcase.include? fu.downcase
-        raise FilteredUserException, "#{self.user.screen_name} is filtered, not going to reply"
         client.update "@#{object.user.screen_name} http://foaas.herokuapp.com/field/your%20Waifu/#{object.user.screen_name}/Mai Waifu0", in_reply_to_status:object
+        raise FilteredUserException, "#{self.user.screen_name} is filtered, not going to reply"
       end
     end
   end
