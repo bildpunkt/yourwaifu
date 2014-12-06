@@ -32,7 +32,7 @@ client = Twitter::REST::Client.new do |config|
   config.access_token = keys['twitter']['access_token']
   config.access_token_secret = keys['twitter']['access_token_secret']
 end
- 
+
 streamer = Twitter::Streaming::Client.new do |config|
   config.consumer_key = keys['twitter']['consumer_key']
   config.consumer_secret = keys['twitter']['consumer_secret']
@@ -58,11 +58,12 @@ if keys['tumblr']['enabled']
     config.oauth_token = keys['tumblr']['access_token']
     config.oauth_token_secret = keys['tumblr']['access_token_secret']
   end
-  
+
   tumblr_client = Tumblr::Client.new
 end
 
 limited = false
+otp = false
 
 begin
   $current_user = client.current_user
@@ -119,10 +120,10 @@ class Twitter::Tweet
   def raise_if_retweet!
     raise NotImportantException if self.text.start_with? "RT @"
   end
-  
+
   def raise_if_client_filtered!
     FILTER_CLIENTS.each do |fc|
-    filter_client = self.source.match SOURCE_REGEX
+      filter_client = self.source.match SOURCE_REGEX
       if filter_client[2].downcase.include? fc.downcase
         raise FilteredClientException, "#{self.user.screen_name} is replying with #{fc}, a filtered client"
       end
@@ -136,7 +137,7 @@ class Twitter::Tweet
       end
     end
   end
-  
+
   def raise_if_user_filtered!
     FILTER_USERS.each do |fu|
       if self.user.screen_name.downcase.include? fu.downcase
@@ -171,16 +172,37 @@ loop do
           when /vocaloid/i
             chosen_one = vocaloid.sample
             chosen_one['title'] = "vocaloid"
+          when /otp/i
+            otp = true
+            chosen_one['partner_a'] = waifu.sample
+            chosen_one['partner_b'] = husbando.sample
+            chosen_one['title'] = "OTP"
+          when /yuri otp/i
+            otp = true
+            chosen_one['partner_a'] = waifu.sample
+            chosen_one['partner_b'] = waifu.sample
+            chosen_one['title'] = "yuri OTP"
+          when /yaoi otp/i
+            otp = true
+            chosen_one['partner_a'] = husbando.sample
+            chosen_one['partner_b'] = husbando.sample
+            chosen_one['title'] = "yaoi OTP"
           else
             chosen_one = waifu.sample
             chosen_one['title'] = "waifu"
         end
-        puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
-        if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}", __FILE__)
-          client.update_with_media "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}"), in_reply_to_status:object
+        if otp
+          puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]} x #{chosen_one["partner_b"]}"
+          client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]} × #{chosen_one["partner_b"]}", in_reply_to_status: object
+          otp = false
         else
-          client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status:object
-          puts "\033[34;1m[#{Time.new.to_s}] posted without image!\033[0m"
+          puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
+          if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}", __FILE__)
+            client.update_with_media "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}"), in_reply_to_status: object
+          else
+            client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status: object
+            puts "\033[34;1m[#{Time.new.to_s}] posted without image!\033[0m"
+          end
         end
         if limited
           limited = false
@@ -203,7 +225,7 @@ loop do
         if e.message.match /update limit/i and !limited
           limited = true
           if keys['tumblr']['enabled']
-            tumblr_client.text(keys['tumblr']['blog_name'], title: "Bot is limited", body: "I've reached the \"daily\" limit for now! Please wait a bit before mentioning me again. [Bot has been limited since: #{Time.new.to_s}]")
+            tumblr_client.text(keys['tumblr']['blog_name'], title: 'Bot is limited', body: "I've reached the \"daily\" limit for now! Please wait a bit before mentioning me again. [Bot has been limited since: #{Time.new.to_s}]")
           end
           if keys['statustwitter']['enabled']
             status.update "\"Daily\" limit reached, please wait a bit before mentioning again! [Bot has been limited since: #{Time.new.to_s}]"
