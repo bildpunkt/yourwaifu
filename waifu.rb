@@ -64,6 +64,7 @@ end
 
 limited = false
 otp = false
+chosen_one = {}
 
 begin
   $current_user = client.current_user
