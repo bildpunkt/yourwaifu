@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.3.6, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="buftok (v0.2.0, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.3, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="equalizer (v0.0.9, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday (v0.9.0, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday_middleware (v0.9.1, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http (v0.6.3, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="http_parser.rb (v0.6.0, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="memoizable (v0.4.2, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types (v2.4.3, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multipart-post (v2.0.0, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="naught (v1.0.0, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oauth (v0.4.7, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple_oauth (v0.3.0, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.4, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tumblr_client (v0.8.4, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="twitter (v5.13.0, RVM: ruby-1.9.3-p547 [global]) [gem]" level="application" />
+  </component>
+</module>
