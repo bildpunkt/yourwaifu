@@ -192,9 +192,9 @@ loop do
             chosen_one['title'] = "waifu"
         end
         if otp
+          otp = false
           puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]} x #{chosen_one["partner_b"]}"
           client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]} × #{chosen_one["partner_b"]}", in_reply_to_status: object
-          otp = false
         else
           puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
           if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}", __FILE__)
