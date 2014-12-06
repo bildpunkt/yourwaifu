@@ -194,7 +194,7 @@ loop do
         end
         if otp
           otp = false
-          puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]} x #{chosen_one["partner_b"]}"
+          puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
           client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]} × #{chosen_one["partner_b"]}", in_reply_to_status: object
         else
           puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
