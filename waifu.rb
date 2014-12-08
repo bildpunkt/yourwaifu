@@ -173,11 +173,6 @@ loop do
           when /vocaloid/i
             chosen_one = vocaloid.sample
             chosen_one['title'] = "vocaloid"
-          when /otp/i
-            otp = true
-            chosen_one['partner_a'] = waifu.sample
-            chosen_one['partner_b'] = husbando.sample
-            chosen_one['title'] = "OTP"
           when /yuri otp/i
             otp = true
             chosen_one['partner_a'] = waifu.sample
@@ -188,6 +183,11 @@ loop do
             chosen_one['partner_a'] = husbando.sample
             chosen_one['partner_b'] = husbando.sample
             chosen_one['title'] = "yaoi OTP"
+          when /otp/i
+            otp = true
+            chosen_one['partner_a'] = waifu.sample
+            chosen_one['partner_b'] = husbando.sample
+            chosen_one['title'] = "OTP"
           else
             chosen_one = waifu.sample
             chosen_one['title'] = "waifu"
