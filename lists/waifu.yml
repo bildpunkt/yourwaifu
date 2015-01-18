@@ -383,6 +383,27 @@
 - name: Kaede Takagaki
   series: The Idolm@ster Cinderella Girls
   filetype: png
+- name: Sachiko Koshimizu
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Miho Kohinata
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Mayu Sakuma
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Mizuki Kawashima
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Koume Shirasaka
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Akane Hino
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Airi Totoki
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
   
   # Love Live!
 - name: Nozomi Toujou
@@ -967,7 +988,7 @@
 - name: Suzuka Dairenji
   series: Tokyo Ravens
   filetype: png
-- name: Kyōko Kurahashi
+- name: Kyoko Kurahashi
   series: Tokyo Ravens
   filetype: png
 - name: Akino Souma
@@ -993,7 +1014,7 @@
 - name: Rika Furude
   series: Higurashi no Naku Koro ni
   filetype: png
-- name: Hanyū
+- name: Hanyu
   series: Higurashi no Naku Koro ni
   filetype: png
   
