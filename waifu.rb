@@ -4,7 +4,7 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
-version = "v2.2.2"
+version = "v2.3.0"
 
 # loading the config file
 keys = YAML.load_file File.expand_path(".", "config.yml")
@@ -21,6 +21,7 @@ imouto = YAML.load_file File.expand_path(".", "lists/imouto.yml")
 shipgirl = YAML.load_file File.expand_path(".", "lists/kancolle.yml")
 touhou = YAML.load_file File.expand_path(".", "lists/touhou.yml")
 vocaloid = YAML.load_file File.expand_path(".", "lists/vocaloid.yml")
+idol = YAML.load_file File.expand_path(".", "lists/idol.yml")
 
 # regex to get client name
 SOURCE_REGEX = /^<a href=\"(https?:\/\/\S+|erased_\d+)\" rel=\"nofollow\">(.+)<\/a>$/
@@ -82,10 +83,11 @@ puts "         [\033[34;1m#{husbando.count}\033[0m] husbando"
 puts "         [\033[34;1m#{shipgirl.count}\033[0m] shipgirls"
 puts "         [\033[34;1m #{touhou.count}\033[0m] touhou"
 puts "         [\033[34;1m #{vocaloid.count}\033[0m] vocaloids"
+puts "         [\033[34;1m #{idol.count}\033[0m] idols"
 puts "         [\033[34;1m #{imouto.count}\033[0m] imouto"
 puts "-------------------------------"
 puts "Filters: [ \033[33;1m#{FILTER_WORDS.count}\033[0m] words"
-puts "         [  \033[33;1m#{FILTER_USERS.count}\033[0m] users"
+puts "         [ \033[33;1m#{FILTER_USERS.count}\033[0m] users"
 puts "         [  \033[33;1m#{FILTER_CLIENTS.count}\033[0m] clients"
 puts "-------------------------------"
 if keys['tumblr']['enabled']
@@ -188,6 +190,9 @@ loop do
             chosen_one['partner_a'] = waifu.sample
             chosen_one['partner_b'] = husbando.sample
             chosen_one['title'] = "OTP"
+          when /idol/i
+            chosen_one = idol.sample
+            chosen_one['title'] = "idol"
           else
             chosen_one = waifu.sample
             chosen_one['title'] = "waifu"
