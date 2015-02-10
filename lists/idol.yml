@@ -66,9 +66,6 @@
 - name: Haruka Amami
   series: The Idolm@ster
   filetype: png
-- name: Chihaya Kisaragi
-  series: The Idolm@ster
-  filetype: png
 - name: Yukiho Hagiwara
   series: The Idolm@ster
   filetype: png
@@ -88,6 +85,18 @@
   series: The Idolm@ster
   filetype: png
 - name: Ami Futami
+  series: The Idolm@ster
+  filetype: png
+- name: Miki Hoshii
+  series: The Idolm@ster
+  filetype: png
+- name: Hibiki Ganaha
+  series: The Idolm@ster
+  filetype: png
+- name: Takane Shijou
+  series: The Idolm@ster
+  filetype: png
+- name: Kotori Otonashi
   series: The Idolm@ster
   filetype: png
 
