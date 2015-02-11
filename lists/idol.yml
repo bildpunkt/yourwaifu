@@ -100,7 +100,18 @@
   series: The Idolm@ster
   filetype: png
 
-  # The Idolm@ster Million Live
+# The Idolm@ster Dearly Stars
+- name: Ai Hidaka
+  series: The Idolm@ster Dearly Stars
+  filetype: png
+- name: Eri Mizutani
+  series: The Idolm@ster Dearly Stars
+  filetype: png
+- name: Ryou Akizuki
+  series: The Idolm@ster Dearly Stars
+  filetype: png
+
+# The Idolm@ster Million Live
 - name: Mirai Kasuga
   series: The Idolm@ster Million Live
   filetype: png
@@ -197,7 +208,7 @@
 - name: Megumi Tokoro
   series: The Idolm@ster Million Live
   filetype: png
-- name: Fuka Toyokawa
+- name: Fuuka Toyokawa
   series: The Idolm@ster Million Live
   filetype: png
 - name: Iku Nakatani
@@ -290,5 +301,20 @@
   series: The Idolm@ster Cinderella Girls
   filetype: png
 - name: Sae Kobayakawa
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Haruna Kamijou
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Aki Yamato
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Sanae Katagiri
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Shizuku Oikawa
+  series: The Idolm@ster Cinderella Girls
+  filetype: png
+- name: Chihiro Senkawa
   series: The Idolm@ster Cinderella Girls
   filetype: png
