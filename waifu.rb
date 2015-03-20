@@ -166,7 +166,7 @@ loop do
           when /imouto/i
             chosen_one = imouto.sample
             chosen_one['title'] = "imouto"
-            if object.text.match? /otp/i
+            if object.text.downcase.include? "otp"
               otp['status'] = true
               otp['type'] = "imouto"
               chosen_one['partner_a'] = imouto.sample
@@ -176,7 +176,7 @@ loop do
           when /shipgirl/i
             chosen_one = shipgirl.sample
             chosen_one['title'] = "shipgirl"
-            if object.text.match? /otp/i
+            if object.text.downcase.include? "otp"
               otp['status'] = true
               otp['type'] = "shipgirl"
               chosen_one['partner_a'] = shipgirl.sample
@@ -186,7 +186,7 @@ loop do
           when /touhou/i
             chosen_one = touhou.sample
             chosen_one['title'] = "touhou"
-            if object.text.match? /otp/i
+            if object.text.downcase.include? "otp"
               otp['status'] = true
               otp['type'] = "touhou"
               chosen_one['partner_a'] = touhou.sample
@@ -196,7 +196,7 @@ loop do
           when /vocaloid/i
             chosen_one = vocaloid.sample
             chosen_one['title'] = "vocaloid"
-            if object.text.match? /otp/i
+            if object.text.downcase.include? "otp"
               otp['status'] = true
               otp['type'] = "vocaloid"
               chosen_one['partner_a'] = vocaloid.sample
@@ -206,7 +206,7 @@ loop do
           when /idol/i
             chosen_one = idol.sample
             chosen_one['title'] = "idol"
-            if object.text.match? /otp/i
+            if object.text.downcase.include? "otp"
               otp['status'] = true
               otp['type'] = "idol"
               chosen_one['partner_a'] = idol.sample
