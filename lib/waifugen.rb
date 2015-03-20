@@ -23,7 +23,7 @@ class WaifuGenerator
     e1 = list.sample
     e2 = list.sample
     t = "@#{user} your OTP is #{e1['name']} x #{e2['name']} (#{e1['series']})"
-    c = "[#{list_name} OTP] #{user}: #{e1['name']} x #{e2['name']}"
+    c = "[#{list_type} OTP] #{user}: #{e1['name']} x #{e2['name']}"
     return {character_1: e1,
             character_2: e2,
             tweet: t,
@@ -39,7 +39,7 @@ class WaifuGenerator
     e1 = list_1.sample
     e2 = list_2.sample
     t = "@#{user} your OTP is #{e1['name']} x #{e2['name']} (#{e1['series']}|#{e2['series']})"
-    c = "[#{list_name} OTP] #{user}: #{e1['name']} x #{e2['name']}"
+    c = "[#{list_type} OTP] #{user}: #{e1['name']} x #{e2['name']}"
     return {character_1: e1,
             character_2: e2,
             tweet: t,
