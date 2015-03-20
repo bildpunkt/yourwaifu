@@ -4,7 +4,13 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
-version = "v3.0.0"
+$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
+
+require "waifugen"
+
+wf = WaifuGenerator.new
+
+version = "4s1"
 
 # loading the config file
 keys = YAML.load_file File.expand_path(".", "config.yml")
@@ -161,113 +167,60 @@ loop do
         object.raise_if_user_filtered!
         case object.text
           when /husbando?/i
-            chosen_one = husbando.sample
-            chosen_one['title'] = "husbando"
+            chosen_one = wf.gen_single("husbando", husbando, object.user.screen_name)
           when /imouto/i
-            chosen_one = imouto.sample
-            chosen_one['title'] = "imouto"
+            chosen_one = wf.gen_single("imouto", imouto, object.user.screen_name)
             if object.text.downcase.include? "otp"
               otp['status'] = true
-              otp['type'] = "imouto"
-              chosen_one['partner_a'] = imouto.sample
-              chosen_one['partner_b'] = imouto.sample
-              chosen_one['title'] = "OTP"
+              chosen_one = wf.gen_multi("imouto", imouto, imouto, object.user.screen_name)
             end
           when /shipgirl/i
-            chosen_one = shipgirl.sample
-            chosen_one['title'] = "shipgirl"
+            chosen_one = wf.gen_single("shipgirl", shipgirl, object.user.screen_name)
             if object.text.downcase.include? "otp"
               otp['status'] = true
-              otp['type'] = "shipgirl"
-              chosen_one['partner_a'] = shipgirl.sample
-              chosen_one['partner_b'] = shipgirl.sample
-              chosen_one['title'] = "OTP"  
+              chosen_one = wf.gen_double("shipgirl", shipgirl, object.user.screen_name)
             end
           when /touhou/i
             chosen_one = touhou.sample
             chosen_one['title'] = "touhou"
             if object.text.downcase.include? "otp"
               otp['status'] = true
-              otp['type'] = "touhou"
-              chosen_one['partner_a'] = touhou.sample
-              chosen_one['partner_b'] = touhou.sample
-              chosen_one['title'] = "OTP" 
+              chosen_one = wf.gen_double("touhou", touhou, object.user.screen_name) 
             end
           when /vocaloid/i
-            chosen_one = vocaloid.sample
-            chosen_one['title'] = "vocaloid"
+            chosen_one = wf.gen_single("vocaloid", vocaloid, object.user.screen_name)
             if object.text.downcase.include? "otp"
               otp['status'] = true
-              otp['type'] = "vocaloid"
-              chosen_one['partner_a'] = vocaloid.sample
-              chosen_one['partner_b'] = vocaloid.sample
-              chosen_one['title'] = "OTP" 
+              chosen_one = wf.gen_multi("vocaloid", vocaloid, vocaloid, object.user.screen_name)
             end
           when /idol/i
-            chosen_one = idol.sample
-            chosen_one['title'] = "idol"
+            chosen_one = wf.gen_single("idol", idol, object.user.screen_name)
             if object.text.downcase.include? "otp"
               otp['status'] = true
-              otp['type'] = "idol"
-              chosen_one['partner_a'] = idol.sample
-              chosen_one['partner_b'] = idol.sample
-              chosen_one['title'] = "OTP" 
+              chosen_one = wf.gen_multi("idol", idol, idol, object.user.screen_name)
             end   
           when /yuri otp/i
             otp['status'] = true
-            otp['type'] = "yuri"
-            chosen_one['partner_a'] = waifu.sample
-            chosen_one['partner_b'] = waifu.sample
-            chosen_one['title'] = "OTP"
+            chosen_one = wf.gen_multi("yuri", waifu, waifu, object.user.screen_name)
           when /yaoi otp/i
             otp['status'] = true
-            otp['type'] = "yaoi"
-            chosen_one['partner_a'] = husbando.sample
-            chosen_one['partner_b'] = husbando.sample
-            chosen_one['title'] = "OTP"
+            chosen_one = wf.gen_multi("yaoi", husbando, husbando, object.user.screen_name)
           when /otp/i
             otp['status'] = true
-            chosen_one['partner_a'] = waifu.sample
-            chosen_one['partner_b'] = husbando.sample
-            chosen_one['title'] = "OTP"
+            chosen_one = wf.gen_multi("default", waifu, husbando, object.user.screen_name)
           else
-            chosen_one = waifu.sample
-            chosen_one['title'] = "waifu"
+            chosen_one = wf.gen_single("waifu", waifu, object.user.screen_name)
         end
         if otp['status']
           otp['status'] = false
-          case otp['type']
-            when "idol"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            when "imouto"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            when "shipgirl"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (Kantai Collection)", in_reply_to_status: object
-            when "touhou"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (Touhou)", in_reply_to_status: object
-            when "vocaloid"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object  
-            when "yaoi"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            when "yuri"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            else
-              puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-          end
+          puts "[#{Time.new.to_s}]#{chosen_one['console']}"
+          client.update chosen_one['tweet'], in_reply_to_status: object
         else
-          puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
-          if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}", __FILE__)
-            client.update_with_media "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}"), in_reply_to_status: object
+          puts "[#{Time.new.to_s}]#{chosen_one['console']}"
+          if File.exists? File.expand_path("../img/#{chosen_one['path']}", __FILE__)
+            client.update_with_media chosen_one['tweet'], File.new("img/#{chosen_one['path']}"), in_reply_to_status: object
           else
-            client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status: object
+            client.update chosen_one['tweet'], in_reply_to_status: object
             puts "\033[34;1m[#{Time.new.to_s}] posted without image!\033[0m"
           end
         end
