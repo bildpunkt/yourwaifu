@@ -181,8 +181,7 @@ loop do
               chosen_one = wf.gen_double("shipgirl", shipgirl, object.user.screen_name)
             end
           when /touhou/i
-            chosen_one = touhou.sample
-            chosen_one['title'] = "touhou"
+            chosen_one = wf.gen_single("touhou", touhou, object.user.screen_name)
             if object.text.downcase.include? "otp"
               otp['status'] = true
               chosen_one = wf.gen_double("touhou", touhou, object.user.screen_name) 
