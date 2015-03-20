@@ -70,7 +70,7 @@ if keys['tumblr']['enabled']
 end
 
 limited = false
-otp = {status: false, type: ""}
+otp = {status: false}
 chosen_one = {}
 
 begin
