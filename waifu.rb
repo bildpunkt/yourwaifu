@@ -4,7 +4,7 @@ require "twitter"
 require "tumblr_client"
 require "ostruct"
 
-version = "v2.3.0"
+version = "v3.0.0"
 
 # loading the config file
 keys = YAML.load_file File.expand_path(".", "config.yml")
@@ -64,7 +64,7 @@ if keys['tumblr']['enabled']
 end
 
 limited = false
-otp = false
+otp = {status: false, type: ""}
 chosen_one = {}
 
 begin
@@ -166,41 +166,102 @@ loop do
           when /imouto/i
             chosen_one = imouto.sample
             chosen_one['title'] = "imouto"
+            if object.text.match? /otp/i
+              otp['status'] = true
+              otp['type'] = "imouto"
+              chosen_one['partner_a'] = imouto.sample
+              chosen_one['partner_b'] = imouto.sample
+              chosen_one['title'] = "OTP"
+            end
           when /shipgirl/i
             chosen_one = shipgirl.sample
             chosen_one['title'] = "shipgirl"
+            if object.text.match? /otp/i
+              otp['status'] = true
+              otp['type'] = "shipgirl"
+              chosen_one['partner_a'] = shipgirl.sample
+              chosen_one['partner_b'] = shipgirl.sample
+              chosen_one['title'] = "OTP"  
+            end
           when /touhou/i
             chosen_one = touhou.sample
             chosen_one['title'] = "touhou"
+            if object.text.match? /otp/i
+              otp['status'] = true
+              otp['type'] = "touhou"
+              chosen_one['partner_a'] = touhou.sample
+              chosen_one['partner_b'] = touhou.sample
+              chosen_one['title'] = "OTP" 
+            end
           when /vocaloid/i
             chosen_one = vocaloid.sample
             chosen_one['title'] = "vocaloid"
-          when /yuri otp/i
-            otp = true
-            chosen_one['partner_a'] = waifu.sample
-            chosen_one['partner_b'] = waifu.sample
-            chosen_one['title'] = "yuri OTP"
-          when /yaoi otp/i
-            otp = true
-            chosen_one['partner_a'] = husbando.sample
-            chosen_one['partner_b'] = husbando.sample
-            chosen_one['title'] = "yaoi OTP"
-          when /otp/i
-            otp = true
-            chosen_one['partner_a'] = waifu.sample
-            chosen_one['partner_b'] = husbando.sample
-            chosen_one['title'] = "OTP"
+            if object.text.match? /otp/i
+              otp['status'] = true
+              otp['type'] = "vocaloid"
+              chosen_one['partner_a'] = vocaloid.sample
+              chosen_one['partner_b'] = vocaloid.sample
+              chosen_one['title'] = "OTP" 
+            end
           when /idol/i
             chosen_one = idol.sample
             chosen_one['title'] = "idol"
+            if object.text.match? /otp/i
+              otp['status'] = true
+              otp['type'] = "idol"
+              chosen_one['partner_a'] = idol.sample
+              chosen_one['partner_b'] = idol.sample
+              chosen_one['title'] = "OTP" 
+            end   
+          when /yuri otp/i
+            otp['status'] = true
+            otp['type'] = "yuri"
+            chosen_one['partner_a'] = waifu.sample
+            chosen_one['partner_b'] = waifu.sample
+            chosen_one['title'] = "OTP"
+          when /yaoi otp/i
+            otp['status'] = true
+            otp['type'] = "yaoi"
+            chosen_one['partner_a'] = husbando.sample
+            chosen_one['partner_b'] = husbando.sample
+            chosen_one['title'] = "OTP"
+          when /otp/i
+            otp['status'] = true
+            chosen_one['partner_a'] = waifu.sample
+            chosen_one['partner_b'] = husbando.sample
+            chosen_one['title'] = "OTP"
           else
             chosen_one = waifu.sample
             chosen_one['title'] = "waifu"
         end
-        if otp
-          otp = false
-          puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-          client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
+        if otp['status']
+          otp['status'] = false
+          case otp['type']
+            when "idol"
+              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
+              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
+            when "imouto"
+              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
+              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
+            when "shipgirl"
+              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
+              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (Kantai Collection)", in_reply_to_status: object
+            when "touhou"
+              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
+              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (Touhou)", in_reply_to_status: object
+            when "vocaloid"
+              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
+              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object  
+            when "yaoi"
+              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
+              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
+            when "yuri"
+              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
+              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
+            else
+              puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
+              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
+          end
         else
           puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
           if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}", __FILE__)
