@@ -1,6 +1,5 @@
-#!/usr/bin/env ruby
-
 Class WaifuGenerator
+
   # gen_single generates a single waifu reply
   # list_type (string): name of the list you want to generate something from
   # list (hash): specify the list the entry should be picked from
