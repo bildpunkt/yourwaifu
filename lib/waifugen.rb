@@ -1,4 +1,4 @@
-Class WaifuGenerator
+class WaifuGenerator
 
   # gen_single generates a single waifu reply
   # list_type (string): name of the list you want to generate something from
