@@ -262,6 +262,7 @@ loop do
               puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
               client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
           end
+          otp['type'] = ""
         else
           puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
           if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}", __FILE__)
