@@ -1026,7 +1026,15 @@
   series: Gintama
   filetype: png
 
-  # Sword Art Online
+# Sword Art Online
 - name: Kirigaya Kazuto
   series: Sword Art Online
+  filetype: png
+
+# Kekkai Sensen
+- name: Leonard Watch
+  series: Kekkai Sensen
+  filetype: png
+- name: Zapp Renfro
+  series: Kekkai Sensen
   filetype: png
