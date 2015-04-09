@@ -1038,3 +1038,17 @@
 - name: Zapp Renfro
   series: Kekkai Sensen
   filetype: png
+
+# Trigun
+- name: Vash The Stampede
+  series: Trigun
+  filetype: png
+- name: Nicholas D Wolfwood
+  series: Trigun
+  filetype: png
+- name: Legato Bluesummers
+  series: Trigun
+  filetype: png
+- name: Knives Millions
+  series: Trigun
+  filetype: png
