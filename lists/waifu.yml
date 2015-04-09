@@ -1836,3 +1836,23 @@
 - name: Nazukari Mirai
   series: Futsuu no Joshikousei ga [Locodol] Yatte Mita
   filetype: png
+
+# Sengoku BASARA
+- name: Oichi
+  series: Sengoku BASARA
+  filetype: png
+- name: Kasuga
+  series: Sengoku BASARA
+  filetype: png
+- name: Magoichi Saika
+  series: Sengoku BASARA
+  filetype: png
+- name: Matsu Maeda
+  series: Sengoku BASARA
+  filetype: png
+- name: Nouhime
+  series: Sengoku BASARA
+  filetype: png
+- name: Maria Kyougoku
+  series: Sengoku BASARA
+  filetype: png
