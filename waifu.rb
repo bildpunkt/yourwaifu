@@ -23,15 +23,6 @@ $LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
 require 'twitter-extensions'
 require 'yourwaifu'
 
-# loading the lists containing characters
-waifu = YAML.load_file File.expand_path(".", "lists/waifu.yml")
-husbando = YAML.load_file File.expand_path(".", "lists/husbando.yml")
-imouto = YAML.load_file File.expand_path(".", "lists/imouto.yml")
-shipgirl = YAML.load_file File.expand_path(".", "lists/kancolle.yml")
-touhou = YAML.load_file File.expand_path(".", "lists/touhou.yml")
-vocaloid = YAML.load_file File.expand_path(".", "lists/vocaloid.yml")
-idol = YAML.load_file File.expand_path(".", "lists/idol.yml")
-
 # Twitter client configuration
 client = Twitter::REST::Client.new do |config|
   config.consumer_key = KEYS['twitter']['consumer_key']
@@ -70,20 +61,10 @@ if KEYS['tumblr']['enabled']
 end
 
 limited = false
-otp = {status: false, type: ""}
-chosen_one = {}
 
 $current_user = client.get_current_user
 
 puts "yourwaifu #{version}"
-puts "-------------------------------"
-puts "Entries: [\033[34;1m#{waifu.count}\033[0m] waifu"
-puts "         [\033[34;1m#{husbando.count}\033[0m] husbando"
-puts "         [\033[34;1m#{shipgirl.count}\033[0m] shipgirls"
-puts "         [\033[34;1m #{touhou.count}\033[0m] touhou"
-puts "         [\033[34;1m #{vocaloid.count}\033[0m] vocaloids"
-puts "         [\033[34;1m #{idol.count}\033[0m] idols"
-puts "         [\033[34;1m #{imouto.count}\033[0m] imouto"
 puts "-------------------------------"
 puts "Filters: [ \033[33;1m#{FILTER_WORDS.count}\033[0m] words"
 puts "         [ \033[33;1m#{FILTER_USERS.count}\033[0m] users"
@@ -98,6 +79,18 @@ if KEYS['statustwitter']['enabled']
   puts "-------------------------------"
 end
 
+# @param obj [Hash] a hash with keys `'series'`, `'name'`, and `'filetype'`
+# @return [Boolean]
+def filename_for(obj)
+  File.join(YourWaifu::IMAGE_PATH, "#{obj["series"]}/#{obj["name"]}.#{obj["filetype"]}"
+end
+
+# @param obj [Hash] a hash with keys `'series'`, `'name'`, and `'filetype'`
+# @return [Boolean]
+def image_exists_for?(obj)
+  File.exists? filename_for(obj)
+end
+
 loop do
   streamer.user do |object|
     if object.is_a? Twitter::Tweet
@@ -108,44 +101,25 @@ loop do
         object.raise_if_word_filtered!
         object.raise_if_user_filtered!
         chosen_one = YourWaifu.pick object
-                if otp['status']
-          otp['status'] = false
-          case otp['type']
-            when "idol"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            when "imouto"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            when "shipgirl"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (Kantai Collection)", in_reply_to_status: object
-            when "touhou"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (Touhou)", in_reply_to_status: object
-            when "vocaloid"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            when "yaoi"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            when "yuri"
-              puts "[#{Time.new.to_s}][#{otp["type"]} OTP] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-            else
-              puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]}"
-              client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["partner_a"]["name"]} x #{chosen_one["partner_b"]["name"]} (#{chosen_one["partner_a"]["series"]}|#{chosen_one["partner_b"]["series"]})", in_reply_to_status: object
-          end
-          otp['type'] = ""
+        first = chosen_one[:matches].first
+        if chosen_one[:is_otp]
+          second = chosen_one[:matches].last
+          puts "[#{Time.new.to_s}][#{chosen_one[:title]} OTP] #{object.user.screen_name}: #{first["name"]} x #{second["name"]}"
+          client.update "@#{object.user.screen_name} Your #{chosen_one[:title]} OTP is #{first["name"]} x #{second["name"]} (#{first["series"]}#{ 
+            unless first['series'] == second['series']
+              "|#{second["series"]}"
+            end})", in_reply_to_status: object  
         else
-          puts "[#{Time.new.to_s}][#{chosen_one["title"]}] #{object.user.screen_name}: #{chosen_one["name"]} - #{chosen_one["series"]}"
-          if File.exists? File.expand_path("../img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}", __FILE__)
-            client.update_with_media "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", File.new("img/#{chosen_one["series"]}/#{chosen_one["name"]}.#{chosen_one["filetype"]}"), in_reply_to_status: object
+          text = "@#{object.user.screen_name} Your #{chosen_one[:title]} is #{first["name"]} (#{first["series"]})"
+          puts "[#{Time.new.to_s}][#{chosen_one[:title]}] #{object.user.screen_name}: #{first["name"]} - #{first["series"]}"
+          if image_exists_for? first
+	    client.update_with_media text, File.new(filename_for(first)) in_reply_to_status: object
           else
-            client.update "@#{object.user.screen_name} Your #{chosen_one["title"]} is #{chosen_one["name"]} (#{chosen_one["series"]})", in_reply_to_status: object
+            client.update text, in_reply_to_status: object
             puts "\033[34;1m[#{Time.new.to_s}] posted without image!\033[0m"
           end
         end
+
         if limited
           limited = false
           if KEYS['tumblr']['enabled']
