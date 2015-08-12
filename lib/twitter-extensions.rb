@@ -5,10 +5,6 @@ class FilteredUserException < FilteredException ; end
 class FilteredTweetException < FilteredException ; end
 
 class Twitter::Tweet
-  def raise_if_current_user!
-    raise NotImportantException if $current_user.id == self.user.id
-  end
-
   def raise_if_retweet!
     raise NotImportantException if self.text.start_with? "RT @"
   end

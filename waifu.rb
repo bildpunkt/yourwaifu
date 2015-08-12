@@ -95,7 +95,7 @@ loop do
   streamer.user do |object|
     if object.is_a? Twitter::Tweet
       begin
-        object.raise_if_current_user!
+        next if object.user.id == $current_user.id
         object.raise_if_retweet!
         object.raise_if_client_filtered!
         object.raise_if_word_filtered!
