@@ -2,7 +2,7 @@ require 'yaml'
 
 module YourWaifu
   # This is the base of all your waifus.
-  # Subclasses MUST implement config_name
+  # Subclasses MUST implement `config_name`, and they MAY implement `title`.
   class Base
     # The constructor loads the entire list and stores it in a class variable
     # for faster lookups.
@@ -17,6 +17,13 @@ module YourWaifu
     # @return [Hash] a hash with the string keys `'name'`, `'series'`, and `'filetype'`
     def sample
       @@list[config_name].sample
+    end
+
+    # Returns the title of the current type.  If this was not subclassed, the
+    # config name is used.
+    # @return [String] The title to display
+    def title
+      config_name
     end
 
     protected
