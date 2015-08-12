@@ -4,21 +4,19 @@ module YourWaifu
   # This is the base of all your waifus.
   # Subclasses MUST implement config_name
   class Base
-    attr_reader :list
-
-    # The constructor loads the entire list and stores it as a class variable
+    # The constructor loads the entire list and stores it in a class variable
     # for faster lookups.
     # If you want to force a reload, set `force_reload` to true.
     # @param force_reload [Boolean] Force a reload of the list.
     def initialize(force_reload = false)
-      @@list ||= []
-      @@list = YAML.load_file(File.join(LIST_PATH, "#{config_name}.yml")) if @@list.empty? || force_reload
+      @@list ||= Hash.new { |h, k| h[k] = [] }
+      @@list[config_name] = YAML.load_file(File.join(LIST_PATH, "#{config_name}.yml")) if @@list[config_name].empty? || force_reload
     end
 
     # Returns a waifu entry.
     # @return [Hash] a hash with the string keys `'name'`, `'series'`, and `'filetype'`
     def sample
-      @@list.sample
+      @@list[config_name].sample
     end
 
     protected
