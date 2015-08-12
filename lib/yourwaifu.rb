@@ -1,10 +1,14 @@
+require 'yourwaifu/defaults'
+require 'yourwaifu/basewaifu'
+
 module YourWaifu
   # @param tweet [Twitter::Tweet] A tweet object.
   # @param tweet [String] The tweet text.
-  # @return [Array] Array containing the perfect husbando/OTP.
+  # @return [Array] Array containing the perfect husbando/OTP as a subclass of YourWaifu::Base.
   def self.pick(tweet)
     text = (tweet.is_a?(Twitter::Tweet) ? tweet.text : tweet)
-    case object.text
+    pick_otp = !!text.match(/(?:^|\s)otp(?:\s|$)/i)  # matches if it contains the whole word 'otp'
+    case text
     when /husbando?/i
       chosen_one = husbando.sample
       chosen_one['title'] = "husbando"
