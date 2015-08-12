@@ -9,88 +9,59 @@ require 'yourwaifu/types/waifu'
 require 'yourwaifu/types/vocaloid'
 require 'yourwaifu/types/husbando'
 
+# The YourWaifu module!
 module YourWaifu
+  # The class to get an entry from if nothing matched.
+  DEFAULT_CLASS = YourWaifu::Waifu
+  # Regular expression => class.  This is in the order of the lookup sequence.
+  # Value may be a Array to make OTP combinations.  These will only be
+  # triggered if an OTP must be picked.
+  MATCHED_CLASSES = {
+    /husbando?/i => YourWaifu::Husbando,
+    /imouto/i    => YourWaifu::Imouto,
+    /shipgirl/i  => YourWaifu::Kancolle,
+    /touhou/i    => YourWaifu::Touhou,
+    /vocaloid/i  => YourWaifu::Vocaloid,
+    /idol/i      => YourWaifu::Idol,
+    /yuri/i      => [YourWaifu::Waifu, YourWaifu::Waifu],
+    /yaoi/i      => [YourWaifu::Husbando, YourWaifu::Husbando],
+    /otp/i       => [YourWaifu::Waifu, YourWaifu::Husbando],
+  }
+
   # @param tweet [Twitter::Tweet] A tweet object.
   # @param tweet [String] The tweet text.
-  # @return [Array] Array containing the perfect husbando/OTP as a subclass of YourWaifu::Base.
+  # @return [Hash] Hash containing the keys `:matches` (Array of Hash),
+  #   `:title` (String), and `:is_otp` (Boolean).  
+  #   The `:matches` array contains the perfect husbando/OTP as returned by
+  #   YourWaifu::Base#sample.  
+  #   The `:title` string is the title of the first match as returned by
+  #   YourWaifu::Base#title.  
+  #   The `:is_otp` boolean is true if the returned match is a OTP pairing.
   def self.pick(tweet)
-    text = (tweet.is_a?(Twitter::Tweet) ? tweet.text : tweet)
+    text = (tweet.is_a?(::Twitter::Tweet) ? tweet.text : tweet)
     pick_otp = !!text.match(/(?:^|\s)otp(?:\s|$)/i)  # matches if it contains the whole word 'otp'
-    case text
-    when /husbando?/i
-      chosen_one = husbando.sample
-      chosen_one['title'] = "husbando"
-    when /imouto/i
-      chosen_one = imouto.sample
-      chosen_one['title'] = "imouto"
-      if object.text.downcase.include? "otp"
-        otp['status'] = true
-        otp['type'] = "imouto"
-        chosen_one['partner_a'] = imouto.sample
-        chosen_one['partner_b'] = imouto.sample
-        chosen_one['title'] = "OTP"
+    
+    klasses = match_classes(text, pick_otp)
+    
+    {
+      matches: klasses.map{ |klass| klass.new.sample },
+      title:   klasses.first.new.title,
+      is_otp:  pick_otp
+    }
+  end
+
+  # Matches one or multiple classes to a given `text`.  If `pick_otp` is
+  # given, two of the same classes will be returned.  If there was no
+  # successful match, an array with `DEFAULT_CLASS` as the only item is
+  # returned.
+  # @return [Array] containing a subclass of YourWaifu::Base
+  def self.match_classes(text, pick_otp = false)
+    MATCHED_CLASSES.each do |regexp, klass|
+      if !!text.match(regexp)
+        return (klass.is_a?(Array) ? klass
+                                   : [klass, (pick_otp ? klass : nil)].compact)
       end
-    when /shipgirl/i
-      chosen_one = shipgirl.sample
-      chosen_one['title'] = "shipgirl"
-      if object.text.downcase.include? "otp"
-        otp['status'] = true
-        otp['type'] = "shipgirl"
-        chosen_one['partner_a'] = shipgirl.sample
-        chosen_one['partner_b'] = shipgirl.sample
-        chosen_one['title'] = "OTP"
-      end
-    when /touhou/i
-      chosen_one = touhou.sample
-      chosen_one['title'] = "touhou"
-      if object.text.downcase.include? "otp"
-        otp['status'] = true
-        otp['type'] = "touhou"
-        chosen_one['partner_a'] = touhou.sample
-        chosen_one['partner_b'] = touhou.sample
-        chosen_one['title'] = "OTP"
-      end
-    when /vocaloid/i
-      chosen_one = vocaloid.sample
-      chosen_one['title'] = "vocaloid"
-      if object.text.downcase.include? "otp"
-        otp['status'] = true
-        otp['type'] = "vocaloid"
-        chosen_one['partner_a'] = vocaloid.sample
-        chosen_one['partner_b'] = vocaloid.sample
-        chosen_one['title'] = "OTP"
-      end
-    when /idol/i
-      chosen_one = idol.sample
-      chosen_one['title'] = "idol"
-      if object.text.downcase.include? "otp"
-        otp['status'] = true
-        otp['type'] = "idol"
-        chosen_one['partner_a'] = idol.sample
-        chosen_one['partner_b'] = idol.sample
-        chosen_one['title'] = "OTP"
-      end
-    when /yuri otp/i
-      otp['status'] = true
-      otp['type'] = "yuri"
-      chosen_one['partner_a'] = waifu.sample
-      chosen_one['partner_b'] = waifu.sample
-      chosen_one['title'] = "OTP"
-    when /yaoi otp/i
-      otp['status'] = true
-      otp['type'] = "yaoi"
-      chosen_one['partner_a'] = husbando.sample
-      chosen_one['partner_b'] = husbando.sample
-      chosen_one['title'] = "OTP"
-    when /otp/i
-      otp['status'] = true
-      chosen_one['partner_a'] = waifu.sample
-      chosen_one['partner_b'] = husbando.sample
-      chosen_one['title'] = "OTP"
-    else
-      chosen_one = waifu.sample
-      chosen_one['title'] = "waifu"
-   end
-   []
+    end
+    [DEFAULT_CLASS, (pick_otp ? klass : nil)].compact
   end
 end
