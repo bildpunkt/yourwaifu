@@ -1,7 +1,13 @@
 require 'yourwaifu/defaults'
 require 'yourwaifu/base'
 
+require 'yourwaifu/types/imouto'
+require 'yourwaifu/types/touhou'
+require 'yourwaifu/types/kancolle'
+require 'yourwaifu/types/idol'
 require 'yourwaifu/types/waifu'
+require 'yourwaifu/types/vocaloid'
+require 'yourwaifu/types/husbando'
 
 module YourWaifu
   # @param tweet [Twitter::Tweet] A tweet object.
