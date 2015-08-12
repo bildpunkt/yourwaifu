@@ -82,7 +82,7 @@ end
 # @param obj [Hash] a hash with keys `'series'`, `'name'`, and `'filetype'`
 # @return [Boolean]
 def filename_for(obj)
-  File.join(YourWaifu::IMAGE_PATH, "#{obj["series"]}/#{obj["name"]}.#{obj["filetype"]}"
+  File.join(YourWaifu::IMAGE_PATH, "#{obj["series"]}/#{obj["name"]}.#{obj["filetype"]}")
 end
 
 # @param obj [Hash] a hash with keys `'series'`, `'name'`, and `'filetype'`
@@ -113,7 +113,7 @@ loop do
           text = "@#{object.user.screen_name} Your #{chosen_one[:title]} is #{first["name"]} (#{first["series"]})"
           puts "[#{Time.new.to_s}][#{chosen_one[:title]}] #{object.user.screen_name}: #{first["name"]} - #{first["series"]}"
           if image_exists_for? first
-	    client.update_with_media text, File.new(filename_for(first)) in_reply_to_status: object
+	    client.update_with_media text, File.new(filename_for(first)), in_reply_to_status: object
           else
             client.update text, in_reply_to_status: object
             puts "\033[34;1m[#{Time.new.to_s}] posted without image!\033[0m"
