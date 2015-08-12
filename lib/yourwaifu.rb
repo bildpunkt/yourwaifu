@@ -1,5 +1,7 @@
 require 'yourwaifu/defaults'
-require 'yourwaifu/basewaifu'
+require 'yourwaifu/base'
+
+require 'yourwaifu/types/waifu'
 
 module YourWaifu
   # @param tweet [Twitter::Tweet] A tweet object.

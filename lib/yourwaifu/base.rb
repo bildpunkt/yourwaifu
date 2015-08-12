@@ -4,7 +4,7 @@ module YourWaifu
   # This is the base of all your waifus.
   # Subclasses MUST implement config_name
   class Base
-    attr_reader list
+    attr_reader :list
 
     # The constructor loads the entire list and stores it as a class variable
     # for faster lookups.
