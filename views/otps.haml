@@ -1,0 +1,16 @@
+.hero-content
+  .container
+    %h1.title.has-text-centered
+      Your
+      = @type
+      is
+      = @partner_a['name']
+      x
+      = @partner_b['name']
+    %h2.subtitle.has-text-centered
+      = "(#{@partner_a['series']}/#{@partner_b['series']})"
+    %p.has-text-centered
+      %a.button.is-primary{href: "https://twitter.com/intent/tweet?text=#{@tweet}&url=http://yourwaifu.moe", target: "_blank"} 
+        %span.icon
+          %i.fa.fa-twitter
+        %span Tweet it!

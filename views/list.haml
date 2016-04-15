@@ -1,0 +1,15 @@
+.hero-content
+  .container
+    %h1.title.has-text-centered
+      Your
+      = @type
+      is
+      = @waifu['name']
+    %h2.subtitle.has-text-centered
+      from
+      = @waifu['series']
+    %p.has-text-centered
+      %a.button.is-primary{href: "https://twitter.com/intent/tweet?text=#{@tweet}&url=http://yourwaifu.moe", target: "_blank"} 
+        %span.icon
+          %i.fa.fa-twitter
+        %span Tweet it!

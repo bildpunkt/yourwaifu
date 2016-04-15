@@ -1,0 +1,27 @@
+!!! 5
+%html
+  %head
+    %meta{"http-equiv" => "Content-Type", "content" => "text/html; charset=utf-8"}
+    %meta{content: "width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0", name: "viewport"}/
+    %title Your Waifu
+    %link{rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.20/css/bulma.min.css"}/
+    %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}/
+  %body
+    %section.hero.is-fullheight.is-primary.is-bold.is-large
+      = yield
+      .hero-footer
+        %nav.tabs
+          .container
+            %ul
+              %li 
+                %a{href: "http://pixelde.su", target: "_blank"}
+                  created by pixeldesu
+              %li 
+                %a{href: "https://twitter.com/yourwaifubot", target: "_blank"}
+                  @yourwaifubot on Twitter
+              %li 
+                %a{href: "https://github.com/pixeldesu/yourwaifu", target: "_blank"}
+                  Source
+              %li 
+                %a{href: "https://paypal.me/pixeldesu", target: "_blank"}
+                  Donate

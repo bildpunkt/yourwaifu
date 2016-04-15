@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'twitter'
-gem 'tumblr_client'
+gem 'sinatra'
+gem 'haml'
+gem 'httparty'
