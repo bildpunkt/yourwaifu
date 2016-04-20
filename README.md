@@ -4,7 +4,7 @@ A website that will give you a randomly picked person, which resembles your perf
 
 ## Usage
 
-`ruby app.rb`
+see the last point in the Installation section
 
 **Tip:** Keep it running in a Screen/tmux session or otherwise it will just close again after you disconnect from your server/machine you host the site on.
 
@@ -12,8 +12,16 @@ A website that will give you a randomly picked person, which resembles your perf
 
 ### Requirements
 
-* Ruby, *should be a package simply called* `ruby` *for your \*nix system*, or use RubyInstaller.
-* `bundle install` to install required packages
+* Ruby, *should be a package simply called* `ruby` *for your \*nix system*.
+* An Unix system (FreeBSD and OS X work fine)
+* Bundler (install it with `gem install bundler`)
+
+### Installation
+
+* `bundle install`
+* copy example nginx config (`nginx.conf.example`) to your nginx directory and change it according to your configuration
+* edit `./config/unicorn.rb` to set the amount of unicorn workers
+* run `bundle exec unicorn -E production -c ./config/unicorn.rb -l unix:./yourwaifu.sock`
 
 ## Contributing
 
